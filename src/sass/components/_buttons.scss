@@ -2,13 +2,12 @@
 .btn-primary {
   display: block;
   width: 100%;
-  border: 2px solid #ff6b09;
-  padding: 14px 57px 15px;
-  color: #ffffff;
-  background-color: #ff6b09;
 
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  border: 2px solid var(--accent-color);
+  padding: 14px 57px 15px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
@@ -25,13 +24,12 @@
 .btn-secondary {
   display: block;
   width: 100%;
-  background-color: #fff;
-  color: #ff6b09;
-  padding: 14px 56px 15px;
-  border: 2px solid #ff6b09;
 
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  padding: 14px 56px 15px;
+  border: 2px solid var(--accent-color);
+
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
