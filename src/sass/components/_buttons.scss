@@ -1,0 +1,56 @@
+// basic style
+.btn-primary {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--accent-color);
+  padding: 14px 57px 15px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 1680px) {
+    padding: 24px 84px 25px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+  }
+}
+
+.btn-secondary {
+  display: block;
+  width: 100%;
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  padding: 14px 56px 15px;
+  border: 2px solid var(--accent-color);
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1680px) {
+    padding: 24px 62px 25px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+  }
+}
+
+//modifier for hero on tablet and destop for primary and secondary buttons
+.btn-definite-width {
+  width: auto;
+}
+// .wraper {
+//   width: 400px;
+//   height: 150px;
+//   background-color: aqua;
+// }
+// .box {
+//   width: 500px;
+//   height: 150px;
+//   background-color: aqua;
+// }
