@@ -1,0 +1,86 @@
+.program {
+    padding-top: 48px;
+    padding-bottom: 105px;
+    background-color: var(--main-color);
+    @media screen and (min-width:768px) {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    @media screen and (min-width:1680px) {
+        padding-top: 80px;
+        padding-bottom: 237px;
+    }
+    &__container {
+        @extend %container;
+    }
+    &__title {
+        @extend %font-title;
+        color: var(--white-color);
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 40px
+        }
+    }
+    &__pre-title {
+        color: var(--white-color);
+        margin-bottom: 4px;
+        font-size: 14px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -20px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            transform: translate(-100%);
+        }
+    }
+    &__list {
+        position: relative;
+        max-width: 176px;
+        margin-left: auto;
+        margin-right: auto;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -26px;
+            width: 1px;
+            height: 1243px;
+            background-color: var(--white-color);
+            transform: translate(-50%);
+        }
+    }
+}
+.course {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 4px
+            }
+    }
+    &__title {
+        position: relative;
+        margin-bottom: 4px;
+        margin-left: 16px;
+        color: var(--accent-color);
+        &::before {
+            position: absolute;
+            content: '';
+            top: 8px;
+            left: -16px;
+            width: 12px;
+            height: 1px;
+            background-color: var(--accent-color);
+          }
+    }
+    &__subject {
+        color: var(--ligth-color)
+    }
+
+}

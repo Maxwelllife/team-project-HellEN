@@ -1,0 +1,47 @@
+.benefits {
+    padding-top: 40px;
+    background-image: linear-gradient(
+    to bottom,
+    var(--main-color) 473px,
+    var(--white-color) 473px);
+    @media screen and (min-width:768px) {
+        padding-top: 80px;
+    }
+    @media screen and (min-width:1680px) {
+
+    }
+    &__container {
+        @extend %container;
+    }
+    &__title {
+        @extend %font-title;
+        color: var(--white-color);
+        @media screen and (max-width:767px) {
+            padding-bottom: 32px;
+            max-width:180px;
+        }
+        @media screen and (max-width:1679px) {
+            padding-bottom: 40px;
+        }
+        @media screen and (min-width:1680px) {
+            // @extend %visually-hidden
+            padding-top: 0;
+        }   
+    }
+    &__list {
+        background-color: var(--white-color);
+        padding: 20px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 40px
+        }
+    }
+    &__number {
+        margin-bottom: 8px;
+        color: var(--accent-color);
+    }
+    &__text {
+        color: var(--ligth-color);
+    }
+}
