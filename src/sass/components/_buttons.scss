@@ -19,14 +19,19 @@
     line-height: 1.21;
     letter-spacing: 0.14em;
   }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+  }
 }
 
 .btn-secondary {
   display: block;
   width: 100%;
-
-  background-color: var(--white-color);
   color: var(--accent-color);
+  background-color: var(--white-color);
+
   padding: 14px 56px 15px;
   border: 2px solid var(--accent-color);
 
@@ -39,6 +44,11 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.14em;
+  }
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
   }
 }
 
@@ -56,3 +66,14 @@
 //   height: 150px;
 //   background-color: aqua;
 // }
+
+// ==================================================================================
+// КОПИРУЙ ОТ СЮДА ТОЛЬКО КНОПКИ
+// <div class="wraper">
+//   <button class="btn-primary btn-definite-width" type="button">
+//     I want a free lesson
+//   </button>
+//   <button class="btn-secondary btn-definite-width" type="button">
+//     Consultation by phone
+//   </button>
+// </div>
