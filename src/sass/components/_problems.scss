@@ -54,17 +54,9 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1679px) {
-    flex-basis: calc((100% - 150px) / 2);
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 20px;
-    /* or 143% */
-
-    letter-spacing: 0.08em;
+    flex-basis: calc((100% - 220px) / 2);
     &:nth-child(odd) {
-      margin-right: 59px;
+      margin-right: 166px;
     }
     // всем, кроме последних 2
     &:not(:nth-last-child(-n + 2)) {
@@ -73,18 +65,10 @@
   }
   @media screen and (min-width: 1680px) {
     // margin: 20px 112px;
-    flex-basis: calc((100% - 480px) / 3);
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 20px;
-    // line-height: 28px;
-    // /* or 140% */
-
-    // letter-spacing: 0.08em;
+    flex-basis: calc((100% - 778px) / 3);
     // всем кроме каждого третьего
     &:not(:nth-child(3n)) {
-      margin-right: 143px;
+      margin-right: 223px;
     }
     // всем кроме последних трех
     &:not(:nth-last-child(-n + 3)) {
