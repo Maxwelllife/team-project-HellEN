@@ -30,7 +30,7 @@
   display: block;
   width: 100%;
   color: var(--accent-color);
-  background-color: var(--second-color);
+  background-color: transparent;
 
   padding: 14px 56px 15px;
   border: 2px solid var(--accent-color);
@@ -49,6 +49,12 @@
   &:focus {
     color: var(--second-color);
     background-color: var(--accent-color);
+  }
+  @media screen and (min-width: 1680px) {
+    padding: 24px 62px 25px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
   }
 }
 
