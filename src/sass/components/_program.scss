@@ -8,15 +8,22 @@
     }
     @media screen and (min-width:1680px) {
         padding-top: 80px;
+        padding-bottom: 0;
     }
     &__container {
         @extend %container;
+    }
+    &__meta {
+        @media screen and (max-width:767px) {
+        width: 208px;
+        margin-left: auto;
+        margin-right: auto;
+        }
     }
     &__title {
         @extend %font-title;
         color: var(--white-color);
         margin-bottom: 40px;
-        text-align: center;
     }
     &__item {
         &:not(:last-child) {
@@ -42,30 +49,51 @@
             border-radius: 50%;
             background-color: var(--accent-color);
             transform: translate(-100%);
+            @media screen and (min-width:768px) {
+                left: -107px;
+            }
         }
     }
     &__list {
         position: relative;
-        max-width: 176px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 32px;
+        @media screen and (min-width:768px) {
+            margin-left: 184px;
+        }
         &::before {
             content: '';
             position: absolute;
             top: 12px;
             left: -26px;
             width: 1px;
-            height: 1149px;
+            height: 1115px;
             background-color: var(--white-color);
             transform: translate(-50%);
+            @media screen and (min-width:768px) {
+                left: -113px;
+                height: 706px;
+            }
         }
     }
 }
 .course {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
     &__item {
+        @media screen and (max-width:767px) {
         &:not(:last-child) {
             margin-bottom: 4px
             }
+        }
+        @media screen and (min-width:768px) and (max-width:1679px) {
+            &:not(:last-child) {
+            margin-right: 28px;
+                }
+            &:not(:nth-child(3)) {
+                width: 156px;
+                }
+        }
     }
     &__title {
         position: relative;
@@ -74,7 +102,7 @@
         color: var(--accent-color);
         // @include font(700, 14, 1.67, 0.08em);
         font-weight: 700;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.67;
         letter-spacing: 0.08em;
         &::before {
