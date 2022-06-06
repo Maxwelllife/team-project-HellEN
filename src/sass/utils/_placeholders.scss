@@ -3,18 +3,18 @@
 %container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     min-width: 320px;
     @media screen and (min-width:480px) {
         width: 480px;
         }
     @media screen and (min-width:768px) {
-        width: 704px;
+        width: 734px;
         }
     @media screen and (min-width:1680px) {
         width: 1680px;
-    }   
+    }  
 }
 
 // /* Базовые параметры секций */

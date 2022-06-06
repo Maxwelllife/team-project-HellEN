@@ -8,16 +8,22 @@
     }
     @media screen and (min-width:1680px) {
         padding-top: 80px;
-        padding-bottom: 237px;
+        padding-bottom: 0;
     }
     &__container {
         @extend %container;
+    }
+    &__meta {
+        @media screen and (max-width:767px) {
+        width: 208px;
+        margin-left: auto;
+        margin-right: auto;
+        }
     }
     &__title {
         @extend %font-title;
         color: var(--white-color);
         margin-bottom: 40px;
-        text-align: center;
     }
     &__item {
         &:not(:last-child) {
@@ -27,52 +33,82 @@
     &__pre-title {
         color: var(--white-color);
         margin-bottom: 4px;
-        font-size: 14px;
         position: relative;
+        // @include font(700, 14, 2, 0.08em);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.08em;
         &::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 8px;
             left: -20px;
             width: 12px;
             height: 12px;
             border-radius: 50%;
             background-color: var(--accent-color);
             transform: translate(-100%);
+            @media screen and (min-width:768px) {
+                left: -107px;
+            }
         }
     }
     &__list {
         position: relative;
-        max-width: 176px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 32px;
+        @media screen and (min-width:768px) {
+            margin-left: 184px;
+        }
         &::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 12px;
             left: -26px;
             width: 1px;
-            height: 1243px;
+            height: 1115px;
             background-color: var(--white-color);
             transform: translate(-50%);
+            @media screen and (min-width:768px) {
+                left: -113px;
+                height: 706px;
+            }
         }
     }
 }
 .course {
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
     &__item {
+        @media screen and (max-width:767px) {
         &:not(:last-child) {
             margin-bottom: 4px
             }
+        }
+        @media screen and (min-width:768px) and (max-width:1679px) {
+            &:not(:last-child) {
+            margin-right: 28px;
+                }
+            &:not(:nth-child(3)) {
+                width: 156px;
+                }
+        }
     }
     &__title {
         position: relative;
         margin-bottom: 4px;
         margin-left: 16px;
         color: var(--accent-color);
+        // @include font(700, 14, 1.67, 0.08em);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.08em;
         &::before {
             position: absolute;
             content: '';
-            top: 8px;
+            top: 11px;
             left: -16px;
             width: 12px;
             height: 1px;
@@ -80,7 +116,11 @@
           }
     }
     &__subject {
-        color: var(--ligth-color)
+        color: var(--ligth-color);
+        // @include font(700, 14, 1.67, 0.08em);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.08em;
     }
-
 }
