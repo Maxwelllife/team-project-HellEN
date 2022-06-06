@@ -2,28 +2,28 @@
     padding-top: 40px;
     background-image: linear-gradient(
     to bottom,
-    var(--main-color) 473px,
-    var(--white-color) 473px);
+    var(--main-bg-color) 473px,
+    var(--second-bg-color) 473px);
     @media screen and (min-width:768px) {
         padding-top: 80px;
         background-image: linear-gradient(
             to bottom,
-            var(--main-color) 264px,
-            var(--white-color) 264px);
+            var(--main-bg-color) 264px,
+            var(--second-bg-color) 264px);
     }
     @media screen and (min-width:1680px) {
         padding-top: 237px;
         background-image: linear-gradient(
             to bottom,
             var(--main-color) 436px,
-            var(--white-color) 436px);
+            var(--second-bg-color) 436px);
     }
     &__container {
         @extend %container;
     }
     &__title {
         @extend %font-title;
-        color: var(--white-color);
+        color: var(--second-color);
         padding-bottom: 32px;
         @media screen and (max-width:767px) {
             max-width:180px;
@@ -33,7 +33,6 @@
         padding-bottom: 40px;
         }
         @media screen and (min-width:1680px) {
-            // @extend %visually-hidden
             position: absolute;
             width: 1px;
             height: 1px;
@@ -47,9 +46,13 @@
         }   
     }
     &__list {
-        background-color: var(--white-color);
+        position: relative;
+        z-index: 1;
+        background-color: var(--second-bg-color);
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         padding: 20px 24px 20px 20px;
+        list-style-type: none;
+        counter-reset: list 0;
         @media screen and (min-width:768px) {
             display: flex;
             flex-wrap: wrap;
@@ -88,29 +91,21 @@
                 margin-right: 0;
             }
         }
-    }
-    &__number {
-        position: relative;
-        margin-bottom: 8px;
-        margin-left: 16px;
-        color: var(--accent-color);
-        // @include font(700, 14, 1.65, 0.08em);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.65;
-        letter-spacing: 0.08em;
         &::before {
-            position: absolute;
-            content: '';
-            top: 11px;
-            left: -16px;
-            width: 12px;
-            height: 1px;
-            background-color: var(--accent-color);
-          }
-        
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.65;
+            letter-spacing: 0.08em;
+            @media screen and (min-width:1680px) {
+                font-size: 20px;
+            }
+            counter-increment: list;
+            content: '— 0' counter(list);
+            color: var(--accent-color);
+        }
     }
     &__text {
+        margin-top: 8px;
         // @include font(700, 14, 1.43, 0.08em);
         font-weight: 700;
         font-size: 14px;

@@ -1,29 +1,37 @@
 .problems {
   @extend %container;
   padding-top: 24px;
+
   background: linear-gradient(var(--main-color) 78%, var(--second-color) 22%);
+
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
   @media screen and (min-width: 1680px) {
     padding-top: 80px;
+    background: url(../images/big_fire.svg) 100% 30% no-repeat,
+      linear-gradient(var(--main-color) 78%, var(--second-color) 22%);
+    // background-repeat: no-repeat;
+    // height: 50%;
+    // background-position: right 70% no-repeat;
   }
-  //   border: 2px solid tomato;
 }
 
 .problems__title {
+  margin-bottom: 24px;
+
   font-weight: 800;
   font-size: 24px;
   line-height: 1.29;
   letter-spacing: 0.03em;
 
   color: var(--second-color);
-  // padding-top: 24px;
-  margin-bottom: 24px;
+
   @media screen and (min-width: 768px) {
     max-width: 440px;
   }
   @media screen and (min-width: 1680px) {
+    margin-bottom: 80px;
     max-width: 840px;
     font-size: 46px;
   }
@@ -39,6 +47,14 @@
   background-color: var(--second-color);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: 0.08em;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -53,24 +69,28 @@
     counter-increment: list;
     content: '— 0' counter(list);
     color: var(--accent-color);
+    line-height: 1.21;
+    @media screen and (min-width: 1680px) {
+      line-height: 1.65;
+    }
   }
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1679px) {
-
     flex-basis: calc((100% - 150px) / 2);
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 
     letter-spacing: 0.08em;
     &:nth-child(odd) {
-      margin-right: 166px;
+      margin-right: 150px;
     }
     // всем, кроме последних 2
     &:not(:nth-last-child(-n + 2)) {
@@ -78,14 +98,14 @@
     }
   }
   @media screen and (min-width: 1680px) {
-
     flex-basis: calc((100% - 480px) / 3);
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 20px;
-    // line-height: 28px;
-    // letter-spacing: 0.08em;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
 
     // всем кроме каждого третьего
     &:not(:nth-child(3n)) {
@@ -100,18 +120,3 @@
 .problems__text {
   margin-top: 15px;
 }
-// .problems__digits {
-//   position: relative;
-//   padding-left: 20px;
-//   color: var(--accent-color);
-// }
-// .problems__digits::before {
-//   position: absolute;
-//   content: '';
-//   top: 50%;
-//   left: 0;
-//   width: 15px;
-//   height: 0.5px;
-//   background-color: var(--accent-color);
-//   transform: translate(0, -50%);
-// }
