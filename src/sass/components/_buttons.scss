@@ -5,7 +5,7 @@
 
   border: 2px solid var(--accent-color);
   padding: 14px 57px 15px;
-  color: var(--white-color);
+  color: var(--second-color);
   background-color: var(--accent-color);
 
   font-weight: 700;
@@ -22,7 +22,7 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-    background-color: var(--white-color);
+    background-color: var(--second-color);
   }
 }
 
@@ -30,7 +30,7 @@
   display: block;
   width: 100%;
   color: var(--accent-color);
-  background-color: var(--white-color);
+  background-color: var(--second-color);
 
   padding: 14px 56px 15px;
   border: 2px solid var(--accent-color);
@@ -47,7 +47,7 @@
   }
   &:hover,
   &:focus {
-    color: var(--white-color);
+    color: var(--second-color);
     background-color: var(--accent-color);
   }
 }
