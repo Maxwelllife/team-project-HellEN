@@ -1,31 +1,30 @@
 body {
-    background-color: #ffffff;
-    color: var(--main-color);
-    font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: var(--main-color);
+  font-family: 'Montserrat', sans-serif;
 }
 img {
-display: block;
-width: 100%;
-height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
-  p,
-  h1,
-  h2,
-  h3,
-  h4 {
-    padding: 0;
-    margin: 0;
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
 }
 button {
   padding: 0;
 }
-  a {
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-

@@ -32,11 +32,13 @@
   color: var(--accent-color);
 }
 .problems__list {
-  //   border: 2px solid tomato;
-  // margin: -20px -112px;
+  list-style-type: none;
+  counter-reset: list 0;
+
   padding: 30px 12px 24px 32px;
   background-color: var(--white-color);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -47,14 +49,26 @@
   }
 }
 .problems__item {
-  position: relative;
+  &::before {
+    counter-increment: list;
+    content: '— 0' counter(list);
+    color: var(--accent-color);
+  }
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1679px) {
-    flex-basis: calc((100% - 220px) / 2);
+
+    flex-basis: calc((100% - 150px) / 2);
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 20px;
+
+    letter-spacing: 0.08em;
     &:nth-child(odd) {
       margin-right: 166px;
     }
@@ -64,8 +78,15 @@
     }
   }
   @media screen and (min-width: 1680px) {
-    // margin: 20px 112px;
-    flex-basis: calc((100% - 778px) / 3);
+
+    flex-basis: calc((100% - 480px) / 3);
+    // font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 28px;
+    // letter-spacing: 0.08em;
+
     // всем кроме каждого третьего
     &:not(:nth-child(3n)) {
       margin-right: 223px;
@@ -76,16 +97,21 @@
     }
   }
 }
-.problems__digits {
-  padding-left: 20px;
-  color: var(--accent-color);
+.problems__text {
+  margin-top: 15px;
 }
-.problems__digits::before {
-  position: absolute;
-  content: '';
-  top: 8px;
-  left: 0;
-  width: 12px;
-  height: 1px;
-  background-color: var(--accent-color);
-}
+// .problems__digits {
+//   position: relative;
+//   padding-left: 20px;
+//   color: var(--accent-color);
+// }
+// .problems__digits::before {
+//   position: absolute;
+//   content: '';
+//   top: 50%;
+//   left: 0;
+//   width: 15px;
+//   height: 0.5px;
+//   background-color: var(--accent-color);
+//   transform: translate(0, -50%);
+// }
