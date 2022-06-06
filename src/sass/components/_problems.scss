@@ -1,7 +1,7 @@
 .problems {
   @extend %container;
   padding-top: 24px;
-  background: linear-gradient(var(--main-color) 78%, var(--white-color) 22%);
+  background: linear-gradient(var(--main-color) 78%, var(--second-color) 22%);
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
@@ -17,7 +17,7 @@
   line-height: 1.29;
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: var(--second-color);
   // padding-top: 24px;
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
@@ -36,7 +36,7 @@
   counter-reset: list 0;
 
   padding: 30px 12px 24px 32px;
-  background-color: var(--white-color);
+  background-color: var(--second-color);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 768px) {
