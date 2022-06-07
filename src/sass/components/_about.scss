@@ -205,6 +205,13 @@
 
     color: var(--accent-color);
 
+    @media screen and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 1.56;
+            margin-top: 20px;
+    
+        }
+
     @media screen and (min-width: 1680px) {
         font-size: 18px;
         line-height: 1.56;
@@ -214,9 +221,7 @@
 }
 
 .about-list__border {
-    padding: 0;
-    margin: 0;
-
+  
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -226,7 +231,7 @@
 
     color: var(--accent-color);
 
-    @media screen and (min-width: 1314px) {
+    @media screen and (min-width: 1680px) {
         margin: 15px 0;
     }
 }
