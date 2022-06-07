@@ -92,11 +92,11 @@ font-size: 20px;
 
 }
 
-// .footer-list__link:hover .footer-list__icon,
-// .footer-list__link:focus .footer-list__icon {
-//   animation: icon-phone 2s ease 0s 1 normal forwards;
-//   animation-iteration-count: infinite;
-// }
+.footer-list__link:hover .footer-list__icon,
+.footer-list__link:focus .footer-list__icon {
+  animation: icon-phone 2s ease 0s 1 normal forwards;
+  animation-iteration-count: infinite;
+}
 
 
 logo {
