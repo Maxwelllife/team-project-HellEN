@@ -1,11 +1,11 @@
 body {
-  background-color: #ffffff;
+  background-color: var(--second-bg-color);
   color: var(--main-color);
   font-family: 'Montserrat', sans-serif;
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 p,

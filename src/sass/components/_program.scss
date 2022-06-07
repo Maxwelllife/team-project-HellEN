@@ -3,6 +3,14 @@
     padding-bottom: 105px;
     background-color: var(--main-color);
     position: relative;
+    @media screen and (min-width:768px) {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        }
+    @media screen and (min-width:1680px) {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
     &::before {
         @media screen and (min-width:1680px) {
         content: '';
@@ -12,58 +20,6 @@
             height: 1px;
             top: 223px;
             left: 0;
-        }
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        @media screen and (max-width:767px) {
-        left: 53%;
-        bottom: 0;
-        width: 176px;
-        height: 137px;
-        background-size: cover;
-        background-image: url(/src/images/program/program-mobile@1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(/src/images/program/program-mobile@2x.png);
-            }
-        }
-    }
-    @media screen and (min-width:768px) and (max-width:1679px) {
-        padding-top: 60px;
-        padding-bottom: 100px;
-        &::after {
-            left: 52.1%;
-            bottom: 0;
-            background-size: cover;
-            width: 368px;
-            height: 268px;
-            background: url(/src/images/program/program-tablet@1x.png) no-repeat;
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url(/src/images/program/program-tablet@2x.png);
-            }
-        }
-    }
-    @media screen and (min-width:1680px) {
-        padding-top: 80px;
-        padding-bottom: 0;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 657px;
-            right: 59.2%;
-            width: 772px;
-            height: 510px;
-            background: url(/src/images/program/program-desktop@1x.png) no-repeat;
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url(/src/images/program/program-desktop@2x.png);
-            }
         }
     }
     &__container {
@@ -173,6 +129,44 @@
                 left: -26px;
                 height: 1134px;
                 }
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            left: 82px;
+            bottom: -105px;
+            width: 150px;
+            height: 137px;
+            background: url(/src/images/program/program-mobile@1x.png);
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(/src/images/program/program-mobile@2x.png) cover;
+                }
+            @media screen and (min-width:768px) {
+                left: 184px;
+                bottom: -100px;
+                width: 368px;
+                height: 268px;
+                background: url(/src/images/program/program-tablet@1x.png);
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(/src/images/program/program-tablet@2x.png) cover;
+                }
+            }
+            @media screen and (min-width:1680px) {
+                top: 393px;
+                left: -15px;
+                width: 684px;
+                height: 510px;
+                background: url(/src/images/program/program-desktop@1x.png);
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(/src/images/program/program-desktop@2x.png) cover;
+                    }
+            }
         }
     }
 }
