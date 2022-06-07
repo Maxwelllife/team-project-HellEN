@@ -92,7 +92,7 @@
 
     letter-spacing: 0.08em;
     &:nth-child(odd) {
-      margin-right: 150px;
+      margin-right: 60px;
     }
     // всем, кроме последних 2
     &:not(:nth-last-child(-n + 2)) {
@@ -100,8 +100,8 @@
     }
   }
   @media screen and (min-width: 1680px) {
-    flex-basis: calc((100% - 480px) / 3);
-
+    // flex-basis: calc((100% - 480px) / 3);
+    width: 336px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -111,7 +111,11 @@
 
     // всем кроме каждого третьего
     &:not(:nth-child(3n)) {
-      margin-right: 223px;
+      // margin-right: 223px;
+      margin-right: 95px;
+    }
+    &:nth-child(3n) {
+      margin-left: 120px;
     }
     // всем кроме последних трех
     &:not(:nth-last-child(-n + 3)) {
