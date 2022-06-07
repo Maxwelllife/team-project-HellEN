@@ -1,6 +1,10 @@
 .container {
     @extend %container}
 
+    .container--center {
+        margin: 0 auto;
+      }
+
    
 
 .footer-list {
@@ -70,11 +74,22 @@
 }
 
 .footer-list__link {
-
-
+color: #111518;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.08em;
 display: flex;
-  align-items: center;
-  justify-content: center;
+align-items: center;
+justify-content: center;
+
+@media screen and (min-width:768px) {
+font-size: 20px;
+
+}
+@media screen and (min-width:1680px) {
+    font-size:  30px;
+}
+
 }
 
 .footer-list__link:hover .footer-list__icon,
@@ -84,13 +99,83 @@ display: flex;
 }
 
 
-.footer-list__logo {
+logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-top: 20px;
+    max-width: 80px;
+
     @media screen and (min-width:768px) {
-        width: 128px;
-    height: 45px;
+        max-width: 129px;
+    }
+
+        @media screen and (min-width:1680px) {
+            display: none;
+        }
+}
+
+.logo__hell {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+
+    @media screen and (min-width:768px) {
+            font-size: 26px;
+        }
+}
+
+.logo__en {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+
+    @media screen and (min-width:768px) {
+            font-size: 26px;
+        }
+}
+
+.logo__icon-fire {
+    margin-left: 4px;
+    margin-right: 4px;
+
+    @media screen and (min-width:768px) {
+        width:22px ;
+        height:30px ;
+
     }
 }
 
+.logo__hellish {
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    @media screen and (min-width:768px) {
+            font-size: 8px;
+    }
+}
+
+.logo_english {
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--main-color);
+
+    @media screen and (min-width:768px) {
+            font-size: 8px;
+        }
+}
 
 .footer-list__icon {
     @media screen and (min-width:480px) {
@@ -112,101 +197,6 @@ display: flex;
 
 }
 
-
-
-
-// .footer__logo {
-//     margin-bottom: 22px;
-
-// @media screen and (min-width:768px) {
-//     margin-bottom: 0;
-
-// }
-
-// @media screen and (min-width:1680px) {
-//     margin-right: 290px;}
-// }
-
-
-// .logo__icon {
-//     display: block;
-//     background-color: red;
-
-// @media screen and (min-width:768px) {
-//     margin-bottom: 0;}
-
-// }
-
-
-// .footer-tel {
-//     display: flex;
-//     align-items: center;
-//     margin-bottom: 28px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 1.21;
-//     letter-spacing: 0.08em;
-//     color:var(--main-color);
-
-// &:hover,
-// &:focus {
-//     color: var(--accent-color);
-//     transform: scale(1.1);
-// }}
-
-// .footer__wrap {
-//     display: flex;}
-
-
-//     .footer__icon {
-//           margin-right: 20px;
-//           width: 20px;
-//           height: 20px;
-        
-//     @media screen and (min-width:768px) {
-//         margin-right: 39px;
-//         width: 24px;
-//         height: 24px;}
-
-//      @media screen and (min-width:1680px) {
-//         margin-right: 30px;
-//         width: 30px;
-//         height: 30px;}
-           
-//         }
-      
-
-// .footer__link {
-
-//  position: relative;
-//         width: 40px;
-//         height: 40px;
-
-// @media screen and (min-width:768px){
-
-//  &::before {
-//                 content: '';
-//                 position: absolute;
-//                 display: block;
-//                 width: 1px;
-//                 height: 40px;
-//                 background-color: #B9B9B9;
-//                 left: -20px;
-//               }
-
-
-
-// }
-
-// @media screen and (min-width:1680px) {
-//                 &::before {
-//                     left: -25px;}
-
-
-
-// }
-// }
-       
     
     .footer__bottom {
         padding-top: 20px;
