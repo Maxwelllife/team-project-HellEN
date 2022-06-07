@@ -223,9 +223,7 @@
 }
 
 .about-list__border {
-    padding: 0;
-    margin: 0;
-
+  
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -235,7 +233,7 @@
 
     color: var(--accent-color);
 
-    @media screen and (min-width: 1314px) {
+    @media screen and (min-width: 1680px) {
         margin: 15px 0;
     }
 }
