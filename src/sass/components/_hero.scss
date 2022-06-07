@@ -1,0 +1,59 @@
+.hero {
+	margin-top: 40px;
+	@extend %container
+}
+
+.hero-tittle {
+	
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 130%;
+		/* or 26px */
+	
+		letter-spacing: 0.03em;
+	
+		color: #111518;
+}
+
+.list-1 {
+
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	/* or 157% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.08em;
+
+	color: #B9B9B9;
+}
+
+.list-2 {
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+	/* or 157% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.08em;
+
+	color: #111518;
+}
+
+.list-3 {
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+	/* or 157% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.08em;
+
+	color: #FF6B09;
+}
