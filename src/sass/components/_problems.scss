@@ -1,5 +1,4 @@
 .problems {
-  @extend %container;
   padding-top: 24px;
 
   background: linear-gradient(var(--main-color) 78%, var(--second-color) 22%);
@@ -15,6 +14,9 @@
     // height: 50%;
     // background-position: right 70% no-repeat;
   }
+}
+.problems__container {
+  @extend %container;
 }
 
 .problems__title {
