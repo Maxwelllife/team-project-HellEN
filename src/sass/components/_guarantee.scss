@@ -1,0 +1,119 @@
+.guarantee {
+    padding-top: 28px;
+
+    
+
+    &__box {
+
+            @extend %container;
+       
+            background-color: var(--third-bg-color);
+       
+            @media screen and (min-width:320px) {
+                 padding-top: 40px;
+                 padding-bottom: 40px;
+            }
+            @media screen and (min-width:768px) {
+                padding: 32px 0;
+               
+            }
+
+                 @media screen and (min-width:1680px) {
+                     padding: 60px 0;
+                 }
+    }
+  
+
+    &__title {
+        
+
+        text-align: center;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: calc(34 / 26);
+        letter-spacing: 0.03em;
+
+        @media screen and (max-width: 1679px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1680px) {
+            margin-bottom: 40px;
+            font-size: 46px;
+            line-height: calc(60 / 46);
+        }
+    }
+
+    &__menu {
+           
+            
+            margin-left: auto;
+            margin-right: auto;
+           
+            @media screen and (min-width:768px) {
+                width: 559px;
+            }
+        
+            @media screen and (min-width:1680px) {
+                width: 1090px;
+            }
+    }
+      
+
+    &__item {
+
+        position: relative;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(20 / 12);
+        padding-left: 28px;
+        
+        color: var(--third-color);
+
+        @media screen and (min-width: 768px) {
+                
+                padding-left: 25px;
+                line-height: calc(28 / 20);
+            }
+
+        @media screen and (min-width: 1680px) {
+           
+            font-size: 20px;
+            line-height: calc(28 /20);
+            padding-left: 30px;   
+        }
+
+        &::before {
+        
+            position: absolute;
+            content: "";
+                left: 0;
+                top: 0;
+                transform: translateX(-50%);
+            width: 15px;
+            height: 20px;
+            background-image: url("../images/fire.svg");
+            
+        }
+    }
+
+    &__item:not(:last-child) {
+
+           
+            padding-bottom: 15px;
+            border-left: 1px dashed var(--third-color);
+            height: 100%;
+            
+           
+
+            @media screen and (min-width: 768px) {
+            padding-bottom: 20px;
+        }
+              
+
+    }
+
+    &__item--element {
+        color: var(--accent-color);
+    }
+}
