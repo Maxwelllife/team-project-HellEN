@@ -1,12 +1,11 @@
 .header {
 	position: relative;
-	@media screen and (min-width:768px) and (max-width:1679px) {
+
+	@media screen and (min-width:768px) and (max-width:1679px)  {
 			padding-top: 40px;
 		}
-	
-
-	
 }
+
 
 .main-nav {
 	@extend %container
@@ -43,27 +42,23 @@
 }
 
 .logo__hell {
-	font-weight: 800;
-	font-size: 15px;
-	line-height: 1.2;
-	letter-spacing: 0.04em;
 	color: var(--main-color);
 
 	@media screen and (min-width:768px) {
-			font-size: 26px;
+			@include font(null, 26px, null, null)
 		}
+
+				@include font(800, 15px, 1.2, 0.04em)
 }
 
 .logo__en {
-	font-weight: 800;
-	font-size: 15px;
-	line-height: 1.2;
-	letter-spacing: 0.04em;
 	color: var(--main-color);
-
+	
 	@media screen and (min-width:768px) {
-			font-size: 26px;
+			@include font(null, 26px, null, null)
 		}
+
+				@include font(800, 15px, 1.2, 0.04em)
 }
 
 .logo__icon-fire {
@@ -78,29 +73,25 @@
 }
 
 .logo__hellish {
-	font-weight: 700;
-	font-size: 5px;
-	line-height: 1.2;
-	letter-spacing: 0.18em;
 	text-transform: uppercase;
 	color: var(--accent-color);
 
 	@media screen and (min-width:768px) {
-			font-size: 8px;
+			@include font(null, 8px, null, null)
 	}
+
+	@include font(700, 5px, 1.2, 0.18em)
 }
 
 .logo_english {
-	font-weight: 700;
-	font-size: 5px;
-	line-height: 1.2;
-	letter-spacing: 0.18em;
 	text-transform: uppercase;
 	color: var(--main-color);
 
 	@media screen and (min-width:768px) {
-			font-size: 8px;
+			@include font(null, 8px, null, null)
 		}
+
+				@include font(700, 5px, 1.2, 0.18em)
 }
 
 .burger {
@@ -126,7 +117,6 @@
 	&:hover, &:focus {
 		color: var(--accent-color);
 	}
-
 }
 
 .icon-burger {
@@ -140,8 +130,6 @@ stroke: currentColor;
 }
 
 .cross {
-	// display: none;
-
 	border: 0;
 	background-color: transparent;
 
@@ -157,13 +145,10 @@ stroke: currentColor;
 		&:focus {
 			color: var(--accent-color);
 		}
-	
 }
 
 
 .menu {
-	
-	
 	padding: 20px 15px 0px 15px;
 
 	@media screen and (min-width:768px) {
@@ -212,7 +197,7 @@ stroke: currentColor;
 			
 				opacity: 1;
 				
-				transition: opacity 500ms linear, visibility 500ms linear;
+				transition: opacity 400ms linear, visibility 400ms linear;
 	}
 
 				@media screen and (min-width:1680px) {
@@ -229,12 +214,11 @@ body.menu-open {
 
 
 
+
+
 .nav-link {
 		font-family: inherit;
-		font-weight: 800;
-		font-size: 20px;
-		line-height: 1.8;
-		letter-spacing: 0.03em;
+
 		color: var(--second-color);
 		transition: color var(--cubic);
 
@@ -243,18 +227,19 @@ body.menu-open {
 		}
 
 	@media screen and (min-width:768px) {
-		font-size: 26px;
+		@include font(null, 26px, null, null)
 	}
 
 		@media screen and (min-width:1680px) {
 			color: rgba(185, 185, 185, 1);
 			display: flex;
 
-			font-size: 14px;
-			line-height: 1.2;
-
 			text-transform: uppercase;
+
+			@include font(null, 14px, 1.2, null)
 		}
+
+		@include font(800, 20px, 1.8, 0.03em )
 }
 
 .logo__drop-menu {
@@ -274,66 +259,59 @@ body.menu-open {
 
 
 .logo__hell-drop-menu {
-	font-weight: 800;
-	font-size: 15px;
-	line-height: 1.2;
-	letter-spacing: 0.04em;
+	
 	color: var(--second-color);
 
 	@media screen and (min-width:768px) {
-			font-size: 26px;
+			@include font(null, 26px, null, null)
 		}
 
 				@media screen and (min-width:1680px) {
 					color: var(--main-color);
 				}
+
+				@include font(800, 15px, 1.2, 0.04em)
 
 }
 
 .logo__en-drop-menu {
-	font-weight: 800;
-	font-size: 15px;
-	line-height: 1.2;
-	letter-spacing: 0.04em;
 	color: var(--second-color);
 
 	@media screen and (min-width:768px) {
-			font-size: 26px;
+			@include font(null, 26px, null, null)
 		}
 
 				@media screen and (min-width:1680px) {
 					color: var(--main-color);
 				}
+
+								@include font(800, 15px, 1.2, 0.04em)
 }
 
 .logo__hellish--drop-menu {
-	font-weight: 700;
-		font-size: 5px;
-		line-height: 1.2;
-		letter-spacing: 0.18em;
 		text-transform: uppercase;
 		color: var(--accent-color);
 	
 		@media screen and (min-width:768px) {
-			font-size: 8px;
+			@include font(null, 8px, null, null)
 		}
+
+		@include font(700, 5px, 1.2, 0.18em)
 }
 
 .logo_english-drop-menu {
-	font-weight: 700;
-	font-size: 5px;
-	line-height: 1.2;
-	letter-spacing: 0.18em;
 	text-transform: uppercase;
 	color: var(--second-color);
 
 	@media screen and (min-width:768px) {
-			font-size: 8px;
+			@include font(null, 8px, null, null)
 		}
 
 				@media screen and (min-width:1680px) {
 					color: var(--main-color);
 				}
+
+								@include font(700, 5px, 1.2, 0.18em)
 }
 
 .menu__item {
@@ -376,11 +354,11 @@ body.menu-open {
 
 	@media screen and (min-width:768px) and (max-width:1679px) {
 		display: none;
-		// pointer-events: visible;
 	}
 }
 
 .button--tablet {
+	cursor: pointer;
 	max-height: 48px;
 	display: none;
 	margin-left: 255px;

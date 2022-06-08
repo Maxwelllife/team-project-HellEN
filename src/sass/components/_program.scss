@@ -51,33 +51,26 @@
             }
         }
         @media screen and (min-width:1680px) {
-            margin-right: 40px;
-            flex-basis: 240px;
+            width: 240px;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
         }
     }
     &__pre-title {
         color: var(--second-color);
         margin-bottom: 4px;
-        // @include font(700, 14, 2, 0.08em);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 2;
-        letter-spacing: 0.08em;
+        @include font(700, 14px, 2, 0.08em);
         @media screen and (min-width:1680px) {
+            @include font(null, 20px, 1.4, null);
             margin-bottom: 24px;
-            font-size: 20px;
-            line-height: 1.4;
         }
     }
     &__number {
         position: relative;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 2;
-        letter-spacing: 0.08em;
+        @include font(700, 14px, 2, 0.08em);
         @media screen and (min-width:1680px) {
-            font-size: 30px;
-            line-height: 0.93;
+            @include font(null, 30px, 0.93, null);
         }
         &::before {
             content: '';
@@ -109,7 +102,6 @@
         }
         @media screen and (min-width:1680px) {
             margin-left: 0;
-            margin-right: -40px;
             display: flex;
             justify-content: center;
         }
@@ -123,11 +115,11 @@
                 transform: translate(-50%);
                 width: 1px;
                 left: -113px;
-                height: 725px;
+                height: 720px;
             }
             @media screen and (max-width:767px) {
                 left: -26px;
-                height: 1134px;
+                height: 1150px;
                 }
         }
         &::after {
@@ -199,19 +191,14 @@
         margin-bottom: 4px;
         margin-left: 18px;
         color: var(--accent-color);
-        // @include font(700, 14, 1.67, 0.08em);
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.67;
-        letter-spacing: 0.08em;
+        @include font(700, 14px, 1.67, 0.08em);
         @media screen and (min-width:768px) {
         margin-left: 21px;
         }
         @media screen and (min-width:1680px) {
             margin-left: 29px;
             margin-bottom: 8px;
-            font-size: 20px;
-            line-height: 1.65;
+            @include font(null, 20px, 1.65, null);
         }
         &::before {
             position: absolute;
@@ -235,14 +222,9 @@
     }
     &__subject {
         color: var(--fourth-color);
-        // @include font(700, 14, 1.67, 0.08em);
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.67;
-        letter-spacing: 0.08em;
+        @include font(500, 12px, 1.67, 0.08em);
         @media screen and (min-width:1680px) {
-            font-size: 18px;
-            line-height: 1.56;
+            @include font(null, 18px, 1.56, null);
         }
     }
 }
