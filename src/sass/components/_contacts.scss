@@ -149,16 +149,9 @@
         }
       }
 
-      // .contacts-form__input:hover::placeholder,
-      // .contacts-form__input:focus::placeholder {
-      //   color: var(--accent-color);
-      // }
-      // .contacts-form__input:placeholder-shown {
-      //   border-color: #fff;
-      // }
-      // .contacts-form__input:valid {
-      //   border-color: green;
-      // }
+      .contacts-form__input:valid:not(:placeholder-shown) {
+        border-color: green;
+        }
       
       .contacts-form__input:invalid {
         border-color: red;
