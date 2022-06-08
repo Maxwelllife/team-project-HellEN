@@ -21,10 +21,9 @@
     }
 
     &__box {
-        
-        
+
         background-color: var(--third-bg-color);
-        position: relative;
+        
 
         @media screen and (max-width: 767px) {
             padding: 30px 20px 31px 27px;
@@ -39,7 +38,7 @@
             padding: 50px 112px 45px 119px;
         }
     }
-    
+  
 
     &__title {
         text-align: center;
@@ -58,6 +57,17 @@
             line-height: calc(60 / 46);
         }
     }
+    &__menu {
+           
+         
+            @media screen and (min-width: 768px) and (max-width: 1679px) {
+                left: 79px;
+            }
+            @media screen and (min-width: 1680px) {
+                padding-left: 112px;
+            }
+    }
+      
 
     &__item {
         
@@ -84,24 +94,39 @@
             width: 15px;
             height: 20px;
             background-image: url("../images/fire.svg");
-
-            
-            @media screen and (min-width: 768px) and (max-width: 1679px) {
-                
-                left: 79px;
+            background-size: cover;
+            @media screen and (min-width: 320px) and (max-width: 479px) {
+                    left: 4px;
+                    margin-left: 32px;
+                }
+            @media screen and (min-width: 480px) and (max-width: 767px) {
+                    left: 4px;
+                    margin-left: 32px;
+                }
+            @media screen and (min-width: 768px) and (max-width: 1679px) {  
+                left: 80px;
+                margin-left: 32px;
             }
 
             @media screen and (min-width: 1680px) {
                 left: 112px;
+                margin-left: 128px;
             }
         }
     }
 
-    &__item:not(:last-child) {
-        padding-bottom: 23px;
-        border-left: 1px dashed var(--third-color);
 
-        @media screen and (min-width: 768px) {
+
+    &__item:not(:last-child) {
+            display: block;
+            padding-bottom: 15px;
+            border-left: 1px dashed var(--third-color);
+            height: 100%;
+            top: 21px;
+            left: 2px;
+           
+
+            @media screen and (min-width: 768px) {
             padding-bottom: 20px;
         }
                 @media screen and (min-width: 1680px) {
