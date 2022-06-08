@@ -1,6 +1,12 @@
+.how {
+    @extend %standart;
+    @media screen and (min-width:1680px) {
+        padding-bottom: 80px;
+    }
+}
+
 .container {
     @extend %container;
-
 }
 
 .how-head {
@@ -25,19 +31,7 @@
         flex-wrap: wrap;
         margin-left: -32px;
         margin-bottom: -32px;
-
-        >li {
-        width: calc(100% / 2 - 64px);
-        margin-left: 32px;
-        margin-bottom: 32px;
-            }
-        }
-        
-    @media screen and (min-width:1680px) {
-        >li {
-        width: calc(100% / 3 - 64px);
-            }
-        }
+    }
 }
 
 .how-item {
@@ -47,15 +41,39 @@
 
     box-shadow: 0 8 26 rgba(0, 0, 0, 0.1);
 
+    transition: background-color var(--cubic), color var(--cubic), fill var(--cubic);
+
     @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 64px) / 2);
+        margin-left: 32px;
+        margin-bottom: 32px;
         padding: 40px 20px 20px 20px;
         min-height: 336px;
         }
     
     @media screen and (min-width:1680px) {
+        flex-basis: calc((100% - 96px) / 3);
         padding: 90px 82px 91px 82px;
         min-height: 528px;
         }
+}
+
+.how-item {
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+
+        .how-description,
+        .how-title,
+        .how-title::after {
+            color: var(--second-color);
+        }
+
+        .how-icon {
+            fill: var(--second-color);
+        }
+    }
 }
 
 .how-icon {
@@ -77,8 +95,15 @@
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.08em;
+    margin-bottom: 4px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 8px;
+    }
 
     @media screen and (min-width:1680px) {
+    margin-bottom: 4px;
+
     font-size: 20px;
     line-height: 1.4;
     }
@@ -97,6 +122,15 @@
         font-size: 20px;
         line-height: 1.65;    
         letter-spacing: 0.08em;
+        margin-bottom: 4px;
+        
+        @media screen and (min-width:768px) {
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width:1680px) {
+            margin-bottom: 4px;
+        }
     }
 }
 
@@ -113,20 +147,5 @@
     @media screen and (min-width:1680px) {
     font-size: 18px;
     line-height: 1.56;
-    }
-}
-
-.how-item {
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-        .how-description,
-        .how-title,
-        .how-title::after {
-        color:var(--second-color);
-        }
-        .how-icon {
-        fill:var(--second-color);
-        }
     }
 }
