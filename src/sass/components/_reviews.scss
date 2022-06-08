@@ -4,11 +4,22 @@
 
 .container {
     @extend %container;
+
+    @media screen and (min-width:768px) {
+        min-height: 459px;
+        }
 }
 
 .reviewers-list {
+    min-height: 688px;
+
     @media screen and (min-width:768px) {
-        box-shadow: -5 8 26 rgba(0, 0, 0, 0.04);
+        
+        min-height: 400px;
+    }
+    @media screen and (min-width:1680px) {
+        width: 1203px;
+        min-height: 340px;
     }
 }
 
@@ -27,6 +38,13 @@
     @media screen and (min-width:768px) {
         flex-direction: row;
         justify-content: center;
+        min-width: 313px;
+
+        box-shadow: -5 8 26 rgba(0, 0, 0, 0.04);
+    }
+
+    @media screen and (min-width:1680px) {
+        width: 1088px;
     }
 }
 
@@ -58,6 +76,9 @@
 
 .reviewers-icon {    
     fill: #436EAB;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #436EAB;
 }
 
 .reviewers-name {
@@ -72,11 +93,12 @@
     color:var(--accent-color);
 
     @media screen and (min-width:768px) {
+        padding-top: 40px;
         margin-bottom: 20px;
         
         font-weight: 800;
-        font-size: 30px;
-        line-height: calc(37 / 30);
+        font-size: 20px;
+        line-height: calc(24 / 20);
         letter-spacing: 0.08em;
         text-align: left;
     }
@@ -139,12 +161,17 @@
     }
 }
 
+.reviewers-review__link{
+    text-decoration-line: underline;
+    color: var(--accent-color);
+}
+
 // .reviewers-list {
 //     height: 481px;
 // }
 
 // .swiper-wrapper {
-//     height: 387px;
+//     height: 414px;
 // }
 
 .swiper-pagination-bullet {
@@ -154,18 +181,84 @@
     opacity: 1;
 }
 
+body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic>span.swiper-pagination-bullet {
+        margin-left: 6px;
+        margin-right: 6px;
+    
+    @media screen and (min-width:768px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 .swiper-pagination-bullet-active {
     border: 1px solid #FF6B09;
 }
 
+.swiper-pagination-bullet{
+    background-size: contain;
+
+    &:nth-child(1){ 
+    background-image: url(../images/reviews/feedback-girl-mobile-90px@2x-min.png);
+    }    
+    &:nth-child(2){ 
+    background-image: url(../images/reviews/reviews-girl-primary@2x-1-min.png);
+    }
+    &:nth-child(3){ 
+    background-image: url(../images/reviews/reviews-girl-quaternary@2x-min.png);
+    }
+    &:nth-child(4){ 
+    background-image: url(../images/reviews/reviews-girl-quinary@2x-min.png);
+    }
+    &:nth-child(5){ 
+    background-image: url(../images/reviews/reviews-girl-secondary@2x-min.png);
+    }
+    &:nth-child(6){ 
+    background-image: url(../images/reviews/reviews-girl-septenary@2x-min.png);
+    }
+    &:nth-child(7){ 
+    background-image: url(../images/reviews/reviews-girl-tertiary@2x-min.png);
+    }
+}
+
+body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+    @media screen and (max-width: 767px) {  
+    width: 200px!important;
+    overflow: hidden;
+    }
+}
+
+body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic>span.swiper-pagination-bullet.swiper-pagination-bullet-active-next,
+body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic>span.swiper-pagination-bullet.swiper-pagination-bullet-active-next-next,
+body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic>span.swiper-pagination-bullet.swiper-pagination-bullet-active-prev,
+body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic>span.swiper-pagination-bullet.swiper-pagination-bullet-active-prev-prev {
+    transform: scale(1);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 1px;
+}
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-    content:"\27F6";
+    content:"\2192";
     color: var(--accent-color);
 }
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-    content: "\27F5";
+    content: "\2190";
     color: var(--accent-color);
+}
+
+body>section.reviews>div>div>div.swiper-button-next,
+body>section.reviews>div>div>div.swiper-button-prev {
+    top: 95%;
+
+    @media screen and (min-width: 768px){
+        top:50%;        
+    }
 }
