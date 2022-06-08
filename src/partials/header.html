@@ -18,8 +18,19 @@
 
         <!-- КНОПКА МОБИЛЬНОГО МЕНЮ -->
 
-        <button type="button" class="burger" data-menu-button>
-          <svg width="21px" height="12px">
+        <button
+          class="btn-secondary btn-definite-width button--tablet"
+          type="button"
+        >
+          Consultation by phone
+        </button>
+
+        <button type="button" class="burger" data-menu-open>
+          <svg
+            width="21px"
+            height="12px"
+            aria-label="Переключатель мобильного меню"
+          >
             <use href="./images/icons.svg#icon-menu" class="icon-burger"></use>
           </svg>
         </button>
@@ -27,7 +38,7 @@
 
       <!-- МЕНЮ -->
 
-      <div class="menu" data-menu>
+      <div class="menu is-open" data-menu>
         <!-- ЛОГОТИП ВЫПАДАЮЩЕГО МЕНЮ -->
         <div class="navigation__flex">
           <a href="" class="logo__drop-menu">
@@ -44,7 +55,7 @@
               Hellish <span class="logo_english-drop-menu">english</span>
             </p>
           </a>
-          <button type="button" class="cross" data-menu-button>
+          <button type="button" class="cross" data-menu-close>
             <svg width="16px" height="16px">
               <use
                 href="./images/icons.svg#icon-close"
@@ -55,16 +66,21 @@
         </div>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="" class="nav-link">Studying program</a>
+            <a href="#program" class="nav-link">Studying program</a>
           </li>
-          <li class="menu__item"><a href="" class="nav-link">About</a></li>
           <li class="menu__item">
-            <a href="" class="nav-link">Training options</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
-          <li class="menu__item"><a href="" class="nav-link">Contacts</a></li>
+          <li class="menu__item">
+            <a href="#training" class="nav-link">Training options</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
         </ul>
         <button
           class="btn-secondary btn-definite-width button-tel"
+          data-modal-open
           type="button"
         >
           Consultation by phone

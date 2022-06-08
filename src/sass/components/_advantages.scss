@@ -1,5 +1,10 @@
-// .advantages {
-// }
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+}
 .advantages__container {
   @extend %container;
 }
@@ -10,7 +15,6 @@
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    // justify-content: space-between;
   }
 }
 .advantages__item {
@@ -48,8 +52,6 @@
     width: 100px;
     height: 102px;
   }
-
-  //   margin-right: 25px;
 }
 
 .advantages__text {
@@ -64,10 +66,7 @@
     margin-left: 10px;
     font-size: 20px;
   }
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.65;
-  letter-spacing: 0.08em;
+  @include font(700, 14, 1.65, 0.08em);
 }
 
 .advantages__icon1 {
