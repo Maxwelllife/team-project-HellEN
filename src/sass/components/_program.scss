@@ -51,8 +51,10 @@
             }
         }
         @media screen and (min-width:1680px) {
-            margin-right: 40px;
-            flex-basis: 240px;
+            width: 240px;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
         }
     }
     &__pre-title {
@@ -128,6 +130,7 @@
             bottom: -105px;
             width: 150px;
             height: 137px;
+            background-size:cover;
             background: url(/src/images/program/program-mobile@1x.png);
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
