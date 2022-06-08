@@ -1,6 +1,12 @@
+.how {
+    @extend %standart;
+    @media screen and (min-width:1680px) {
+        padding-bottom: 80px;
+    }
+}
+
 .container {
     @extend %container;
-
 }
 
 .how-head {
