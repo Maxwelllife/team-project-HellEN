@@ -6,5 +6,30 @@
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
-    background-image: none ;
+    background-image: none, url(/src/images/registration/registration-desktop-1680px@1x-min.png);
+    background-size: cover; 
 }
+
+.box-centered {
+    min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;}
+
+    .contacts-title {
+       
+        color: #111518;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 136%;
+      
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;}
+
+
+        .contacts-text--accent {
+            color: #ff6b09;
+          }
+        
+        
