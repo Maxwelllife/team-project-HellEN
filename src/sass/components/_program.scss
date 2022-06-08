@@ -102,7 +102,6 @@
         }
         @media screen and (min-width:1680px) {
             margin-left: 0;
-            margin-right: -40px;
             display: flex;
             justify-content: center;
         }
@@ -130,7 +129,6 @@
             bottom: -105px;
             width: 150px;
             height: 137px;
-            background-size:cover;
             background: url(/src/images/program/program-mobile@1x.png);
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
