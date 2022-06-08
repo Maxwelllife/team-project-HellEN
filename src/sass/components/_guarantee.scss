@@ -1,47 +1,32 @@
 .guarantee {
     padding-top: 28px;
-    &__container {
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 15px;
-            padding-right: 15px;
-            min-width: 320px;
-        
-            @media screen and (min-width:480px) {
-                width: 480px;
-            }
-        
-            @media screen and (min-width:768px) {
-                width: 734px;
-            }
-        
-            @media screen and (min-width:1680px) {
-                width: 1680px;
-            }
-    }
 
-    &__box {
-        
-        
-        background-color: var(--third-bg-color);
-        position: relative;
-
-        @media screen and (max-width: 767px) {
-            padding: 30px 20px 31px 27px;
-           
-        }
-
-        @media screen and (min-width: 768px) {
-            padding: 30px 50px 30px 86px;
-        }
-
-        @media screen and (min-width: 1680px) {
-            padding: 50px 112px 45px 119px;
-        }
-    }
     
 
+    &__box {
+
+            @extend %container;
+       
+            background-color: var(--third-bg-color);
+       
+            @media screen and (min-width:320px) {
+                 padding-top: 40px;
+                 padding-bottom: 40px;
+            }
+            @media screen and (min-width:768px) {
+                padding: 32px 0;
+               
+            }
+
+                 @media screen and (min-width:1680px) {
+                     padding: 60px 0;
+                 }
+    }
+  
+
     &__title {
+        
+
         text-align: center;
         font-weight: 800;
         font-size: 26px;
@@ -53,60 +38,78 @@
         }
 
         @media screen and (min-width: 1680px) {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             font-size: 46px;
             line-height: calc(60 / 46);
         }
     }
 
-    &__item {
+    &__menu {
+           
+            
+            margin-left: auto;
+            margin-right: auto;
+           
+            @media screen and (min-width:768px) {
+                width: 559px;
+            }
         
+            @media screen and (min-width:1680px) {
+                width: 1090px;
+            }
+    }
+      
+
+    &__item {
+
+        position: relative;
         font-weight: 500;
         font-size: 12px;
         line-height: calc(20 / 12);
         padding-left: 28px;
-        max-width: 1090px;
-
+        
         color: var(--third-color);
+
+        @media screen and (min-width: 768px) {
+                
+                padding-left: 25px;
+                line-height: calc(28 / 20);
+            }
 
         @media screen and (min-width: 1680px) {
            
             font-size: 20px;
-            line-height: calc(28 / 20);
-            
+            line-height: calc(28 /20);
+            padding-left: 30px;   
         }
 
         &::before {
         
             position: absolute;
             content: "";
-            left: 20px;
+                left: 0;
+                top: 0;
+                transform: translateX(-50%);
             width: 15px;
             height: 20px;
             background-image: url("../images/fire.svg");
-
             
-            @media screen and (min-width: 768px) and (max-width: 1679px) {
-                
-                left: 79px;
-            }
-
-            @media screen and (min-width: 1680px) {
-                left: 112px;
-            }
         }
     }
 
     &__item:not(:last-child) {
-        padding-bottom: 23px;
-        border-left: 1px dashed var(--third-color);
 
-        @media screen and (min-width: 768px) {
+           
+            padding-bottom: 15px;
+            border-left: 1px dashed var(--third-color);
+            height: 100%;
+            
+           
+
+            @media screen and (min-width: 768px) {
             padding-bottom: 20px;
         }
-                @media screen and (min-width: 1680px) {
-                    padding-bottom: 20px;
-                }
+              
 
     }
 

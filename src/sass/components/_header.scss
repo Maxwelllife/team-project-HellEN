@@ -1,5 +1,4 @@
 .header {
-	outline: 3px solid red;
 	position: relative;
 
 	@media screen and (min-width:768px) and (max-width:1679px)  {
@@ -198,7 +197,7 @@ stroke: currentColor;
 			
 				opacity: 1;
 				
-				transition: opacity 500ms linear, visibility 500ms linear;
+				transition: opacity 400ms linear, visibility 400ms linear;
 	}
 
 				@media screen and (min-width:1680px) {
@@ -211,6 +210,8 @@ stroke: currentColor;
 body.menu-open {
 	overflow: hidden;
 }
+
+
 
 
 
@@ -357,6 +358,7 @@ body.menu-open {
 }
 
 .button--tablet {
+	cursor: pointer;
 	max-height: 48px;
 	display: none;
 	margin-left: 255px;
