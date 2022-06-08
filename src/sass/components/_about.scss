@@ -32,6 +32,9 @@
 
 
 &__title {
+
+  
+    
     font-weight: 800;
     padding-left: 15px;
     padding-right: 15px;
@@ -151,19 +154,17 @@
     color: var(--fourth-color);
     font-weight: 500;
 
-
     @media screen and (min-width: 768px) {
         align-items: center;
         font-size: 12px;
         line-height: 2;
         min-width: 280px;
-
+      
     }
 
     @media screen and (min-width: 1680px) {
         font-size: 18px;
         line-height: 1.56;
-
         
     }
     
@@ -180,11 +181,10 @@
 
         @media screen and (min-width: 768px) {
                 font-size: 12px;
-
+               
                 line-height: calc(28 / 18);
         
                 margin-bottom: 20px;
-
             }
     
         @media screen and (min-width: 1680px) {
@@ -218,7 +218,8 @@
     @media screen and (min-width: 1680px) {
         font-size: 18px;
         line-height: 1.56;
-
+        
+    
     }
 }
 
