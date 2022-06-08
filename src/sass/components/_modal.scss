@@ -1,51 +1,253 @@
 .backdrop {
-	z-index: 30;
-
 	position: fixed;
+	z-index: 30;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100%;
+background-color: rgba(17, 21, 24, 0.90);
 
-	background-color: rgba(red, $alpha: 0.5);
+transition: opacity 400ms linear,
+visibility 400ms linear;
 
 	&.is-hidden {
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
 	}
+
+		&.is-hidden .order-modal {
+transform: translate(-50%, -50%) scale(0.8);
+		}
 }
 
+
+
+
 .order-modal {
-	height: 100%;
-	width: 100%;
+	padding: 35px 15px;
 
-	background-color: antiquewhite;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform var(--cubic);
+	width: 300px;
+	height: 550px;
 
-	padding: 20px 15px 0px 15px;
 	
-		@media screen and (min-width:768px) {
-			padding: 40px 32px 0px 32px;
+		
+
+	@media screen and (min-width:768px) {
+		width: 450px;
+	}
+
+		@media screen and (min-width:1680px) {
+			width: 600px;
+				height: 700px;
+		}
+				
+
+								background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+
+				box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+				0px 1px 1px rgb(0 0 0 / 14%),
+				0px 2px 1px rgb(0 0 0 / 20%);
+				border-radius: 4px;
+
 	
+	
+}
+
+.order-modal__button {
+	cursor: pointer;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	border: 0;
+	background-color: transparent;
+	color: var(--main-color);
+
+	transition: color var(--cubic);
+	
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+}
+
+.order-modal__svg {
+	max-width: 16px;
+	max-height: 16px;
+
+	@media screen and (min-width:768px) {
+			max-width: 18px;
+				max-height: 18px;
 		}
 	
 		@media screen and (min-width:1680px) {
-			padding: 40px 0px 0px 0px;
+			width: 20px;
+				height: 20px;
 	
 		}
+
 	
 }
 
-
-
-
-
-.order-modal__button {
-	border: 0;
-	background-color: transparent;
-	// color: var(--second-color);
-	color: teal;
-}
 .order-modal__use {
 	stroke: currentColor;
+}
+
+.form__item {
+	cursor: pointer;
+	position: relative;
+	
+
+	display: flex;
+	flex-direction: column;
+
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+.button-submit {
+	// position: absolute;
+	// bottom: 35px;
+	
+
+
+	cursor: pointer;
+
+	// max-width: 150px;
+	// max-height: 50px;
+	padding:15px 15px 15px 15px;
+	box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+			0px 1px 1px rgb(0 0 0 / 14%),
+			0px 2px 1px rgb(0 0 0 / 20%);
+
+			
+
+
+}
+
+body.modal-open {
+	overflow: hidden;
+}
+
+
+.form__svg {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+
+	fill: currentColor;
+
+	transition:color var(--cubic);
+
+
+
+	@media screen and (min-width:768px) {
+		width: 25px;
+			height: 25px;
+	}
+		@media screen and (min-width:1680px) {
+			width: 30px;
+				height: 35px;
+			
+		}
+}
+
+.form__input {
+	cursor: pointer;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	width: 100%;
+	height: 40px;
+	padding: 10px 30px ;
+
+	transition: border-color var(--cubic);
+
+	&:hover,
+		&:focus {
+			border-color: var(--accent-color);
+			box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+					0px 1px 1px rgb(0 0 0 / 14%),
+					0px 2px 1px rgb(0 0 0 / 20%);
+		}
+
+				&:hover+.form__svg,
+				&:focus+.form__svg {
+					color: var(--accent-color);
+					border-color: var(--accent-color);
+				}
+
+								@media screen and (min-width:768px) {
+									padding: 10px 35px;
+								}
+			@media screen and (min-width:1680px) {
+					height: 50px;
+					padding: 5px 45px;
+				}
+}
+
+
+
+.form__list {
+	margin-bottom: 190px;
+	@media screen and (min-width:768px) {
+			margin-bottom: 180px;
+		}
+	
+		@media screen and (min-width:1680px) {
+			margin-bottom: 280px;
+		}
+
+}
+
+
+
+.order-modal__title {
+	text-align: center;
+	text-transform: uppercase;
+	
+	@include font(700, 20px, 1.5, 0.03em)
+}
+
+.form__label {
+	@media screen and (min-width:768px) {
+			font-size: 18px;
+		}
+	@media screen and (min-width:1680px) {
+		font-size: 22px;
+	}
+	@include font(500, 15px, 1.5, 0.03em)
+
+	
+}
+
+.form__select {
+	cursor: pointer;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		width: 100%;
+		height: 40px;
+		
+		&:hover,
+			&:focus {
+				border-color: var(--accent-color);
+				box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+					0px 1px 1px rgb(0 0 0 / 14%),
+					0px 2px 1px rgb(0 0 0 / 20%);
+			}
+		
+
+@media screen and (min-width:1680px) {
+		height: 50px;
+	}
+
+}
+
+.form__option {
+	width: 100%;
 }
