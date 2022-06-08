@@ -201,6 +201,7 @@
           margin-bottom: 30px;
         }
       }
+<<<<<<< Updated upstream
 
       .contacts-form__input:hover::placeholder,
       .contacts-form__input:focus::placeholder {
@@ -210,18 +211,26 @@
       .contacts-form__input:valid {
         color: #fff;
         background-color: transparent;
+=======
+      .contacts-form__input:valid:not(:placeholder-shown) {
+        border-color: green;
+>>>>>>> Stashed changes
       }
       
       .contacts-form__input:invalid {
         color: #fff;
         background-color: rgb(255, 0, 0);
       }
+<<<<<<< Updated upstream
         
 
       
 
 
           .btn-primary {
+=======
+          .contacts-btn {
+>>>>>>> Stashed changes
             display: flex;
   justify-content: center;
   align-items: center;
