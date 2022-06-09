@@ -21,8 +21,9 @@
 }
 
 @media screen and (min-width:1680px) {
-    justify-content: flex-start;
-    padding: 52px 0px;
+    position: relative;
+    justify-content: center;
+    padding: 84px 0 82px 0;
 }
 }
 
@@ -34,6 +35,12 @@
         margin-bottom: 0px;
     }
 
+    @media screen and (min-width:1680px) {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    }
+
 }
 
 .footer-list__item:last-child {
@@ -43,9 +50,6 @@
         display: flex;
     }
 
-    @media screen and (min-width:1680px) {
-        margin-left: 290px;
-    }
 
 
 }
@@ -99,7 +103,7 @@ font-size: 20px;
 }
 
 
-logo {
+logo__footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -111,9 +115,6 @@ logo {
         max-width: 129px;
     }
 
-        @media screen and (min-width:1680px) {
-            display: none;
-        }
 }
 
 .logo__hell {
@@ -202,6 +203,10 @@ logo {
         padding-top: 20px;
         padding-bottom: 20px;
         background-color:#111518;
+        @media screen and (min-width:1680px) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
       }
 
       .footer__copyright {
