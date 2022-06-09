@@ -56,14 +56,17 @@
 
 .advantages__text {
   @media screen and (max-width: 767px) {
+    width: 203px;
     margin-left: 20px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 45px;
+    margin-left: 25px;
+    width: 145px;
   }
   @media screen and (min-width: 1680px) {
-    margin-left: 10px;
+    width: 270px;
+    margin-left: -15px;
     font-size: 20px;
   }
   @include font(700, 14, 1.65, 0.08em);
