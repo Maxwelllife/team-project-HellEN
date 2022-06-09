@@ -4,47 +4,49 @@
 
 .container {
     @extend %container;
-
-    @media screen and (min-width:768px) {
-        min-height: 459px;
-        }
 }
 
 .reviewers-list {
-    min-height: 688px;
-
     @media screen and (min-width:768px) {
-        
-        min-height: 400px;
+        width: 704px;
+
     }
     @media screen and (min-width:1680px) {
-        width: 1203px;
-        min-height: 340px;
+        width: 1088px;
     }
 }
 
 .reviews-head {
     margin-bottom: 24px;
-
     @extend %font-title;
     text-align: center;
+    @media screen and (min-width:768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .reviewers-item{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 80px;
+    @media screen and (max-width:767px) {
+        align-items: center;
+    }
 
     @media screen and (min-width:768px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
         flex-direction: row;
         justify-content: center;
-        min-width: 313px;
-
         box-shadow: -5 8 26 rgba(0, 0, 0, 0.04);
+        width: 704px;
     }
 
     @media screen and (min-width:1680px) {
         width: 1088px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -93,9 +95,7 @@
     color:var(--accent-color);
 
     @media screen and (min-width:768px) {
-        padding-top: 40px;
         margin-bottom: 20px;
-        
         font-weight: 800;
         font-size: 20px;
         line-height: calc(24 / 20);
@@ -147,8 +147,6 @@
 }
 
 .reviewers-review {
-    margin-bottom: 40px;
-    
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
@@ -159,11 +157,20 @@
     @media screen and (min-width:768px) {
     text-align: left
     }
+    @media screen and (min-width:1680px) {
+        font-size: 18px;
+        }
 }
 
-.reviewers-review__link{
+.reviewers-review__btn{
     text-decoration-line: underline;
     color: var(--accent-color);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#more {
+    display: none;
 }
 
 .swiper-pagination-bullet {
@@ -251,6 +258,10 @@ body>section.reviews>div>div>div.swiper-button-prev {
     top: 95%;
 
     @media screen and (min-width: 768px){
-        top:50%;        
+        top: 42%;        
     }
+}
+.swiper-button-next, .swiper-button-prev {
+width: calc(var(--swiper-navigation-size)/ 44 * 27);
+height: var(--swiper-navigation-size);
 }
