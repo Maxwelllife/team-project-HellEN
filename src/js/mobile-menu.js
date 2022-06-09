@@ -2,7 +2,7 @@
   const refs = {
     openMenuBtn: document.querySelector('[data-menu-open]'),
     closeMenuBtn: document.querySelector('[data-menu-close]'),
-    Menu: document.querySelector('[data-menu]'),
+    menu: document.querySelector('[data-menu]'),
     menuList: document.querySelector('.menu__list'),
   };
 
@@ -11,10 +11,10 @@
   refs.menuList.addEventListener('click', removeMenu);
   function toggleMenu() {
     document.body.classList.toggle('menu-open');
-    refs.Menu.classList.toggle('is-open');
+    refs.menu.classList.toggle('is-open');
   }
   function removeMenu() {
     document.body.classList.remove('menu-open');
-    refs.Menu.classList.add('is-open');
+    refs.menu.classList.add('is-open');
   }
 })();
