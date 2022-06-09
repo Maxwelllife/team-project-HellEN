@@ -7,11 +7,8 @@
   padding: 14px 54px 15px;
   color: var(--second-color);
   background-color: var(--accent-color);
-
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.08em;
+  @include font(700, 12px, 1.25, 0.08em);
+  transition: color var(--cubic);
   @media screen and (min-width: 768px) {
     padding-left: 44px;
     padding-right: 44px;
@@ -38,17 +35,11 @@
 
   padding: 14px 43px 15px;
   border: 2px solid var(--accent-color);
-
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.08em;
-
+  @include font(700, 12px, 1.25, 0.08em);
+  transition: color var(--cubic);
   @media screen and (min-width: 768px) {
     padding: 14px 9px 13px;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.14em;
+    @include font(null, 14px, 1.21, 0.14em);
   }
 
   @media screen and (min-width: 1680px) {
@@ -66,24 +57,3 @@
 .btn-definite-width {
   width: auto;
 }
-// .wraper {
-//   width: 400px;
-//   height: 150px;
-//   background-color: aqua;
-// }
-// .box {
-//   width: 500px;
-//   height: 150px;
-//   background-color: aqua;
-// }
-
-// ==================================================================================
-// КОПИРУЙ ОТ СЮДА ТОЛЬКО КНОПКИ
-// <div class="wraper">
-//   <button class="btn-primary btn-definite-width" type="button">
-//     I want a free lesson
-//   </button>
-//   <button class="btn-secondary btn-definite-width" type="button">
-//     Consultation by phone
-//   </button>
-// </div>
