@@ -36,7 +36,7 @@
         @extend %font-title;
         color: var(--second-color);
         margin-bottom: 40px;
-        @media screen and (max-width:679px) {
+        @media screen and (max-width:769px) {
         margin-left: 32px;
         }
         @media screen and (min-width:1680px) {
@@ -115,11 +115,11 @@
                 transform: translate(-50%);
                 width: 1px;
                 left: -113px;
-                height: 720px;
+                height: 707px;
             }
             @media screen and (max-width:767px) {
                 left: -26px;
-                height: 1150px;
+                height: 1115px;
                 }
         }
         &::after {
@@ -191,7 +191,7 @@
         margin-bottom: 4px;
         margin-left: 18px;
         color: var(--accent-color);
-        @include font(700, 14px, 1.67, 0.08em);
+        @include font(700, 12px, 1.67, 0.08em);
         @media screen and (min-width:768px) {
         margin-left: 21px;
         }
