@@ -40,6 +40,8 @@
 }
 
 .how-item {
+    position: relative;
+
     min-height: 280px;
     margin-bottom: 16px;
     padding: 32px 4px 8px 4px;
@@ -61,25 +63,21 @@
         padding: 90px 82px 91px 82px;
         min-height: 528px;
         }
-}
 
-.how-item {
-    position: relative;
-
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-
-        .how-description,
-        .how-title,
-        .how-title::after {
-            color: var(--second-color);
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+    
+            .how-description,
+            .how-title,
+            .how-title::after {
+                color: var(--second-color);
+            }
+    
+            .how-icon {
+                fill: var(--second-color);
+            }
         }
-
-        .how-icon {
-            fill: var(--second-color);
-        }
-    }
 }
 
 .how-icon {
