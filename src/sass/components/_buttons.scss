@@ -30,8 +30,6 @@
 //   }
 // }
 
-
-
 .btn-secondary {
   display: block;
   width: 100%;
@@ -42,7 +40,10 @@
   padding: 14px 43px 15px;
   border: 2px solid var(--accent-color);
   @include font(700, 12px, 1.25, 0.08em);
+
   transition: color var(--cubic);
+  transition: background-color var(--cubic);
+
   @media screen and (min-width: 768px) {
     padding: 14px 9px 13px;
     @include font(null, 14px, 1.21, 0.14em);
@@ -55,6 +56,7 @@
   &:hover,
   &:focus {
     color: var(--second-color);
+
     background-color: var(--accent-color);
   }
 }
