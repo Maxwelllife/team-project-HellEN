@@ -33,6 +33,7 @@
         align-items: center;
     }
 
+
     @media screen and (min-width:768px) {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -151,11 +152,13 @@
     font-size: 12px;
     line-height: 1.67;
     text-align: center;
-    
     color: var(--third-color);
 
     @media screen and (min-width:768px) {
-    text-align: left
+        text-align: left;
+    }
+    @media screen and (min-width:1680px) {
+
     }
     @media screen and (min-width:1680px) {
         font-size: 18px;
@@ -258,6 +261,7 @@ body>section.reviews>div>div>div.swiper-button-prev {
         top: 42%;        
     }
 }
+
 .swiper-button-next, .swiper-button-prev {
 width: calc(var(--swiper-navigation-size)/ 44 * 27);
 height: var(--swiper-navigation-size);
