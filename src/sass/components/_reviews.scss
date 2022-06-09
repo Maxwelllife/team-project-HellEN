@@ -166,14 +166,6 @@
     color: var(--accent-color);
 }
 
-// .reviewers-list {
-//     height: 481px;
-// }
-
-// .swiper-wrapper {
-//     height: 414px;
-// }
-
 .swiper-pagination-bullet {
     width: 54px;
     height: 54px;
@@ -223,7 +215,7 @@ body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swi
 
 body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
     @media screen and (max-width: 767px) {  
-    width: 200px!important;
+    width: 200!important;
     overflow: hidden;
     }
 }
