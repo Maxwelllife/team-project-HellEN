@@ -200,6 +200,9 @@
             margin-bottom: 8px;
             @include font(null, 20px, 1.65, null);
         }
+        &--transparent {
+            color:transparent;
+        }
         &::before {
             position: absolute;
             content: '';
