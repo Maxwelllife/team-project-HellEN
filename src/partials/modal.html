@@ -1,48 +1,66 @@
 <!-- МОДАЛЬНОЕ ОКНО -->
-<di class="backdrop is-hidden" data-modal>
-	<div class="order-modal">
-		<button type="button" class="order-modal__button" data-modal-close >
-			<svg class="order-modal__svg" width="16px" heigth="16px">
-				<use href="./images/icons.svg#icon-close" class="order-modal__use"></use>
-			</svg>
-		</button>
-		<form name="form" class="order-modal__form">
-			<h2 class="order-modal__title">
-Sign up for training</h2>
-				<ul class="form__list">
-					<li class="form__item">
-						<label for="user-name" class="form__label">Name
-						</label>
-						<input type="text" name="user-name" id="user-name" class="form__input" required>
-						<svg class="form__svg" width="20px" height="20px">
-								<use class="form__use" href="./images/icons.svg#icon-user-form"></use>
-							</svg>
-					</li>
-					<li class="form__item">
-						<label for="user-tel" class="form__label">Number
-						</label>
-						<input type="tel" name="user-tel" id="user-tel" class="form__input" required>
-						<svg class="form__svg" width="20px" height="20px">
-								<use class="form__use" href="./images/icons.svg#icon-mobile-form"></use>
-							</svg>
-					</li>
-					<li>
-						<label for="user-select" class="form__label"> Choise your English Level 
-						</label>
-						<select name="user-select" id="user-select" class="form__select">
-								<option class="form__option" value="z2">Beginner</option>
-								<option class="form__option" value="a1">Elementary</option>
-								<option class="form__option" value="a2">Pre-Intermediate</option>
-								<option class="form__option" value="b1">Intermediate</option>
-								<option class="form__option" value="b2">Upper-Intermediate</option>
-								<option class="form__option" value="c1">Advanced</option>
-								<option class="form__option" value="c2">Proficiency</option>
-								<option class="form__option" value="z1">I don't know</option>
-							</select>
-					</li>
-				</ul>
-				<button type="submit" class="button-submit btn-secondary ">Send</button>
-		</form>
-		
-	</div>
+<div class="backdrop is-hidden" data-modal>
+  <div class="order-modal">
+    <button type="button" class="order-modal__button" data-modal-close>
+      <svg class="order-modal__svg" width="16px" height="16px">
+        <use
+          href="./images/icons.svg#icon-close"
+          class="order-modal__use"
+        ></use>
+      </svg>
+    </button>
+    <form name="form" class="order-modal__form">
+      <h2 class="order-modal__title">Sign up for training</h2>
+      <ul class="form__list">
+        <li class="form__item">
+          <label for="user-name" class="form__label">Name </label>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="form__input"
+            required
+          />
+          <svg class="form__svg" width="20px" height="20px">
+            <use
+              class="form__use"
+              href="./images/icons.svg#icon-user-form"
+            ></use>
+          </svg>
+        </li>
+        <li class="form__item">
+          <label for="user-tel" class="form__label">Number </label>
+          <input
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            class="form__input"
+            required
+          />
+          <svg class="form__svg" width="20px" height="20px">
+            <use
+              class="form__use"
+              href="./images/icons.svg#icon-mobile-form"
+            ></use>
+          </svg>
+        </li>
+        <li>
+          <label for="user-select" class="form__label">
+            Choise your English Level
+          </label>
+          <select name="user-select" id="user-select" class="form__select">
+            <option class="form__option" value="z2">Beginner</option>
+            <option class="form__option" value="a1">Elementary</option>
+            <option class="form__option" value="a2">Pre-Intermediate</option>
+            <option class="form__option" value="b1">Intermediate</option>
+            <option class="form__option" value="b2">Upper-Intermediate</option>
+            <option class="form__option" value="c1">Advanced</option>
+            <option class="form__option" value="c2">Proficiency</option>
+            <option class="form__option" value="z1">I don't know</option>
+          </select>
+        </li>
+      </ul>
+      <button type="submit" class="button-submit btn-secondary">Send</button>
+    </form>
+  </div>
 </div>
