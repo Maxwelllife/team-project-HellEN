@@ -19,10 +19,6 @@
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
     height: var(--swiper-navigation-size);
     }
-    #more {
-        display: none;
-    }
-    
 
 .reviews-head {
     margin-bottom: 24px;
@@ -274,6 +270,4 @@ body>section.reviews>div>div>div.swiper-button-prev {
 width: calc(var(--swiper-navigation-size)/ 44 * 27);
 height: var(--swiper-navigation-size);
 }
-#more {
-    display: none;
-}
+
