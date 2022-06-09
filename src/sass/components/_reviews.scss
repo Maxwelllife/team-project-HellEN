@@ -247,13 +247,20 @@ body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swi
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-    content:"\2192";
+    content: "";
+    width: 27px;
+    height: 16px;
+
+    background-image: url(../images/arrow_right.svg);
     color: var(--accent-color);
 }
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-    content: "\2190";
+    content: "";
+    width: 27px;
+    height: 16px;
+    background-image: url(../images/arrow_left.svg);
     color: var(--accent-color);
 }
 
@@ -267,7 +274,6 @@ body>section.reviews>div>div>div.swiper-button-prev {
 }
 
 .swiper-button-next, .swiper-button-prev {
-width: calc(var(--swiper-navigation-size)/ 44 * 27);
-height: var(--swiper-navigation-size);
+width: 27px;
 }
 
