@@ -21,20 +21,8 @@
 				background-image: url(../images/background/bg-image-tablet@2x-min.png);
 				}
 			}
-			// SECOND BG
-			@media screen and (min-width:768px) {
-				&{ 
-					background-image: url(../images/background/bg-image-desktop@1x-min.png);
-				}
-			@media (min-device-pixel-ratio: 2),
-				(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
-				& {background-image: url(../images/background/bg-image-desktop@2x-min.png);
-									}
-								}
-			}
-			// THIRD BG
-						@media screen and (min-width:940px) {
+			// second BG
+						@media screen and (min-width:768px) {
 							& {
 								background-image: url(../images/background/bg-image-adaptive.png);
 							}
@@ -75,7 +63,7 @@
 				margin-top: 40px;
 		}
 
-	@media screen and (min-width:780px) {
+	@media screen and (min-width:768px) {
 			min-width:375px;
 			min-height:321px ;
 		}
@@ -146,12 +134,7 @@ margin-top: 8px;
 				@include font(700, 14px, 1.6, 0.08em)
 }
 
-// .hero__text--flex {
-// 	@media screen and (min-width:1680px) {
-// 		display: flex;
-// 		align-items: center;
-// 	}
-// }
+
 
 .hero__link-button {
 	text-align: center;
