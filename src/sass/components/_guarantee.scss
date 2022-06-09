@@ -60,6 +60,7 @@
             }
     }
       
+        /*--Там де вогник--*/
 
     &__item {
 
@@ -88,8 +89,8 @@
         
             position: absolute;
             content: "";
-                left: 0;
-                top: 0;
+                left: 1;
+                top: -1;
                 transform: translateX(-50%);
             width: 15px;
             height: 20px;
@@ -97,6 +98,8 @@
             
         }
     }
+
+    /*-- Там де пунктирна лінія */
 
     &__item:not(:last-child) {
 
