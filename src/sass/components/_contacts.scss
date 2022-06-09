@@ -16,7 +16,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     
-        background-image: url(/src/images/registration/registration-desktop-1680px@2x-min.png);
+        background-image: url(/src/images/registration/registration-desktop-1680px@2x-min.webp);
         background-size: cover;
     } 
 
@@ -35,12 +35,12 @@
 
     @media screen and (min-width: 1680px) {
         max-width: 1680px;
-        background-image: none, url(/src/images/registration/registration-desktop-1680px@1x-min.png);
+        background-image: none, url(/src/images/registration/registration-desktop-1680px@1x-min.webp);
         @media screen and (min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
           screen and (min-resolution: 2dppx) {
            
-        background-image: url(/src/images/registration/registration-desktop-1680px@2x-min.png);
+        background-image: url(/src/images/registration/registration-desktop-1680px@2x-min.webp);
         background-size: cover;
         
         }
@@ -177,6 +177,7 @@
             color: var(--second-color);
             background-color: var(--accent-color);
             @include font(700, 12px, 1.25, 0.08em);
+            transition: color var(--cubic);
 
             @media screen and (min-width: 768px) {
                 margin-top: 32px;
