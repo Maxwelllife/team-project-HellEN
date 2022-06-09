@@ -64,6 +64,7 @@
 }
 
 .how-item {
+    position: relative;
 
     &:hover,
     &:focus {
@@ -100,7 +101,7 @@
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.08em;
-    margin-bottom: 4px;
+    margin: 0 5px 4px 5px;
 
     @media screen and (min-width:768px) {
         margin-bottom: 8px;
@@ -115,28 +116,28 @@
 }
 
 .how-title {
-    &::after {
-        content: "—"; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    &::after    {
+         content: "—"; 
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
 
-        color: var(--accent-color);
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.65;    
-        letter-spacing: 0.08em;
-        margin-bottom: 4px;
+         color: var(--accent-color);
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 1.65;    
+         letter-spacing: 0.08em;
+         margin-bottom: 4px;
         
-        @media screen and (min-width:768px) {
-            margin-bottom: 8px;
-        }
+         @media screen and (min-width:768px) {
+             margin-bottom: 8px;
+         }
 
-        @media screen and (min-width:1680px) {
-            margin-bottom: 4px;
-        }
-    }
+         @media screen and (min-width:1680px) {
+             margin-bottom: 4px;
+         }
+     }
 }
 
 .how-description {
