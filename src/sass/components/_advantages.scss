@@ -65,8 +65,10 @@
     width: 145px;
   }
   @media screen and (min-width: 1680px) {
+
     width: 270px;
     margin-left: -15px;
+
     font-size: 20px;
   }
   @include font(700, 14, 1.65, 0.08em);
