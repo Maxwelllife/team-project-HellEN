@@ -1,14 +1,13 @@
 .problems {
   padding-top: 24px;
 
-  background: linear-gradient(var(--main-color) 78%, var(--second-color) 22%);
+  background: linear-gradient(var(--main-bg-color) 78%, var(--second-color) 22%);
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
   }
   @media screen and (min-width: 1680px) {
     padding-top: 80px;
-    background: linear-gradient(var(--main-color) 78%, var(--second-color) 22%);
   }
 }
 .problems__container {

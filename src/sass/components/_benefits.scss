@@ -46,6 +46,7 @@
         }   
     }
     &__list {
+        box-shadow: var(--shadow);
         position: relative;
         z-index: 1;
         background-color: var(--second-bg-color);

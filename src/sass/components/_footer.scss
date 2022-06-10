@@ -1,8 +1,6 @@
-.container {
-    @extend %container}
-    .container--center {
-        margin: 0 auto;
-      }
+.footer__container {
+    @extend %container;
+}
 .footer-list {
         display: flex;
         flex-direction: column;
@@ -80,56 +78,7 @@ logo__footer {
         max-width: 129px;
     }
 }
-.logo__hell {
-    font-weight: 800;
-    font-size: 15px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    color: var(--main-color);
-    @media screen and (min-width:768px) {
-            font-size: 26px;
-        }
-}
-.logo__en {
-    font-weight: 800;
-    font-size: 15px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    color: var(--main-color);
-    @media screen and (min-width:768px) {
-            font-size: 26px;
-        }
-}
-.logo__icon-fire {
-    margin-left: 4px;
-    margin-right: 4px;
-    @media screen and (min-width:768px) {
-        width:22px ;
-        height:30px ;
-    }
-}
-.logo__hellish {
-    font-weight: 700;
-    font-size: 5px;
-    line-height: 1.2;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    @media screen and (min-width:768px) {
-            font-size: 8px;
-    }
-}
-.logo_english {
-    font-weight: 700;
-    font-size: 5px;
-    line-height: 1.2;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--main-color);
-    @media screen and (min-width:768px) {
-            font-size: 8px;
-        }
-}
+
 .footer-list__icon {
     @media screen and (min-width:319px) {
         width: 20px;
@@ -149,7 +98,8 @@ logo__footer {
     .footer__bottom {
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color:var(--main-color);
+        background-color: #111518;
+        border-top: 1px solid #fff;
         @media screen and (min-width:1680px) {
             padding-top: 26px;
             padding-bottom: 26px;

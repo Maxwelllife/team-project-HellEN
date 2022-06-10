@@ -1,7 +1,7 @@
 .program {
     padding-top: 48px;
     padding-bottom: 105px;
-    background-color: var(--main-color);
+    background-color: #111518;
     position: relative;
     @media screen and (min-width:768px) {
         padding-top: 60px;
@@ -15,7 +15,7 @@
         @media screen and (min-width:1680px) {
         content: '';
         position: absolute;
-        background-color: var(--second-color);
+        background-color: #111518;
             width: 100%;
             height: 1px;
             top: 223px;
@@ -34,7 +34,10 @@
     }
     &__title {
         @extend %font-title;
-        color: var(--second-color);
+        color: #fff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right,#ff6b09 3%,#fff 20%, #ff6b09 100%);
         margin-bottom: 40px;
         @media screen and (max-width:769px) {
         margin-left: 32px;
@@ -58,7 +61,7 @@
         }
     }
     &__pre-title {
-        color: var(--second-color);
+        color: #fff;
         margin-bottom: 4px;
         @include font(700, 14px, 2, 0.08em);
         @media screen and (min-width:1680px) {
@@ -109,7 +112,7 @@
             @media screen and (max-width:1679px) {
                 content: '';
                 position: absolute;
-                background-color: var(--second-color);
+                background-color: #fff;
                 top: 12px;
                 left: -26px;
                 transform: translate(-50%);
@@ -187,6 +190,7 @@
         }
     }
     &__title {
+        box-shadow: var(-shadow) ;
         position: relative;
         margin-bottom: 4px;
         margin-left: 18px;
