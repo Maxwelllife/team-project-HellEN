@@ -1,11 +1,13 @@
 .guarantee {
     padding-top: 28px;
+    &__container {
+    @extend %container;
+    }
 
     
 
     &__box {
-
-            @extend %container;
+        @extend %container;
        
             background-color: var(--third-bg-color);
        
@@ -27,7 +29,7 @@
     &__title {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right,#ff6b09 45%,#ffF 55%,#ff6b09 100%);
+        background-image: linear-gradient(to right,var(--title-color) 45%,var(--second-title-color) 55%,var(--title-color) 100%);
         text-align: center;
         font-weight: 800;
         font-size: 26px;

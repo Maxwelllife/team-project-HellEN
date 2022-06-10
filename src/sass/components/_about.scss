@@ -37,7 +37,7 @@
   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right,#ff6b09 5%,#fff 20%, #ff6b09 100%);
+    background-image: linear-gradient(to right,var(--title-color) 5%,var(--second-title-color) 20%, var(--title-color) 100%);
     font-weight: 800;
     padding-left: 15px;
     padding-right: 15px;
