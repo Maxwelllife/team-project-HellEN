@@ -8,9 +8,11 @@
 
 
 .main-nav {
-	@extend %container
+	@extend %container;
 }
-
+.navigation{
+	position: relative;
+}
 .navigation__flex {
 	display: flex;
 	justify-content: space-between;

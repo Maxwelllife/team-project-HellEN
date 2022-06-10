@@ -8,33 +8,32 @@
 			padding-top: 40px;
 		}
 	
-	// FIRST BG
 
-	background-image: url(../images/background/bg-image-tablet@1x-min.png);
-		background-position: center;
-		background-size: cover;
+// 	background-image: url(../images/background/bg-image-tablet@1x-min.png);
+// 		background-position: center;
+// 		background-size: cover;
 
-		@media (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
-				& {
-				background-image: url(../images/background/bg-image-tablet@2x-min.png);
-				}
-			}
-			// second BG
-						@media screen and (min-width:768px) {
-							& {
-								background-image: url(../images/background/bg-image-adaptive.png);
-							}
+// 		@media (min-device-pixel-ratio: 2),
+// 			(min-resolution: 192dpi),
+// 			(min-resolution: 2dppx) {
+// 				& {
+// 				background-image: url(../images/background/bg-image-tablet@2x-min.png);
+// 				}
+// 			}
+
+// 						@media screen and (min-width:768px) {
+// 							& {
+// 								background-image: url(../images/background/bg-image-adaptive.png);
+// 							}
 			
-							@media (min-device-pixel-ratio: 2),
-							(min-resolution: 192dpi),
-							(min-resolution: 2dppx) {
-								& {
-									background-image: url(../images/background/bg-image-adaptive@2x.png);
-								}
-							}
-						}
+// 							@media (min-device-pixel-ratio: 2),
+// 							(min-resolution: 192dpi),
+// 							(min-resolution: 2dppx) {
+// 								& {
+// 									background-image: url(../images/background/bg-image-adaptive@2x.png);
+// 								}
+// 							}
+// 						}
 }
 
 .section-hero {

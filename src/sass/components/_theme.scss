@@ -1,0 +1,81 @@
+.switcher {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 50px;
+    height: 50px;
+  
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: color 400ms linear, background-color 400ms linear;
+  
+    @media screen and (max-width: 1679px) {
+      width: 34px;
+      height: 34px;
+    }
+  
+    &:hover {
+      color: var(--second-color);
+      background-color: var(--main-color);
+    }
+  }
+  
+  .toggle-off {
+    display: none;
+  }
+  
+  .switcher.is-open-button {
+    color: var(--second-color);
+    background-color: #ffffff20;
+    border-radius: 50%;
+    transition: color 200ms linear, background-color 200ms linear;
+  
+    &:hover {
+      color: var(--main-color);
+      background-color:  var(--second-color);
+      border-radius: 50%;
+    }
+  }
+  
+  .switcher.is-open-button .toggle-off {
+    display: inline-flex;
+  }
+  
+  .switcher.is-open-button .toggle-on {
+    display: none;
+  }
+  
+  // -----------------------------------------------------------------------
+  .toggle-wrapper {
+    right: -7px;
+    top: 60px;
+    position: absolute;
+    display: flex;
+    @media screen and (min-width: 1680px) {
+      top: 130px;
+    }
+  }
+
+  svg.toggle-on {
+    width: 30px;
+    height: 30px;
+  
+    @media screen and (max-width: 1679px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  
+  svg.toggle-off {
+    width: 30px;
+    height: 30px;
+  
+    @media screen and (max-width: 1679px) {
+      width: 22px;
+      height: 22px;
+    }
+  }

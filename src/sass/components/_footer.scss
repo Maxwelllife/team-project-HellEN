@@ -40,7 +40,7 @@
         content: '';
         width: 0px;
         height: 40px;
-        border: 1px solid #B9B9B9;
+        border: 1px solid var(--fourth-color);;
         margin: 0px 25px;
     }
 }
@@ -51,7 +51,7 @@
     }
 }
 .footer-list__link {
-color: #111518;
+color: var(--main-color);
 font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.08em;
@@ -149,7 +149,7 @@ logo__footer {
     .footer__bottom {
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color:#111518;
+        background-color:var(--main-color);
         @media screen and (min-width:1680px) {
             padding-top: 26px;
             padding-bottom: 26px;
@@ -159,6 +159,6 @@ logo__footer {
         font-weight: 500;
         font-size: 14px;
         line-height: 2;
-        color: #B9B9B9;
+        color: var(--fourth-color);
         text-align: center;
     }

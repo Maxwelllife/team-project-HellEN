@@ -1,3 +1,4 @@
+
 :root {
   --main-color: #111518;
   --second-color: #ffffff;
@@ -8,4 +9,14 @@
   --second-bg-color: #ffffff;
   --third-bg-color: #f1f1f1;
   --cubic: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dark {
+  --main-color: #ffffff;
+  --second-color: #111518;;
+  --third-color: #b37070;
+  --fourth-color: #b9b9b9;
+  --accent-color: #ffe261;
+  --main-bg-color: #ffffff;
+  --second-bg-color: #111518;
+  --third-bg-color: #140d20;
 }
