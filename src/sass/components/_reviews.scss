@@ -86,6 +86,13 @@
     padding: 3px;
     border-radius: 50%;
     border: 1px solid #436EAB;
+
+    transition: fill var(--cubic), border var(--cubic);
+
+    &:hover, &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .reviewers-name {
@@ -151,7 +158,8 @@
     }
 }
 
-.reviewers-review {
+.reviewers-review,
+.more {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
@@ -168,14 +176,6 @@
         font-size: 18px;
         }
 }
-
-.reviewers-review__btn{
-    text-decoration-line: underline;
-    color: var(--accent-color);
-    background-color: transparent;
-    border-color: transparent;
-}
-
 
 .swiper-pagination-bullet {
     width: 54px;
@@ -195,7 +195,7 @@ body>section.reviews>div>div>div.swiper-pagination.swiper-pagination-bullets.swi
 }
 
 .swiper-pagination-bullet-active {
-    border: 1px solid #FF6B09;
+    border: 1px solid var(--accent-color);
 }
 
 .swiper-pagination-bullet{
@@ -273,7 +273,24 @@ body>section.reviews>div>div>div.swiper-button-prev {
     }
 }
 
-.swiper-button-next, .swiper-button-prev {
-width: 27px;
+// .swiper-button-next, .swiper-button-prev {
+// width: 27px;
+// }
+
+.read {
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+
+    transition: color var(--cubic);
+
+    &:hover, &:focus {
+        color: #0000ff;
+    }
 }
 
+.more {
+    display: none;
+}
