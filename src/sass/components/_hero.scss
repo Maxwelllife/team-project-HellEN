@@ -1,189 +1,180 @@
 .section {
-	padding-top: 40px;
+  padding-top: 40px;
 
-	@media screen and (min-width:768px) {
-		padding-top: 80px;
-	}
-		@media screen and (min-width:1680px) {
-			padding-top: 40px;
-		}
-	
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 1680px) {
+    padding-top: 40px;
+  }
 
-// 	background-image: url(../images/background/bg-image-tablet@1x-min.png);
-// 		background-position: center;
-// 		background-size: cover;
+  // 	background-image: url(../images/background/bg-image-tablet@1x-min.png);
+  // 		background-position: center;
+  // 		background-size: cover;
 
-// 		@media (min-device-pixel-ratio: 2),
-// 			(min-resolution: 192dpi),
-// 			(min-resolution: 2dppx) {
-// 				& {
-// 				background-image: url(../images/background/bg-image-tablet@2x-min.png);
-// 				}
-// 			}
+  // 		@media (min-device-pixel-ratio: 2),
+  // 			(min-resolution: 192dpi),
+  // 			(min-resolution: 2dppx) {
+  // 				& {
+  // 				background-image: url(../images/background/bg-image-tablet@2x-min.png);
+  // 				}
+  // 			}
 
-// 						@media screen and (min-width:768px) {
-// 							& {
-// 								background-image: url(../images/background/bg-image-adaptive.png);
-// 							}
-			
-// 							@media (min-device-pixel-ratio: 2),
-// 							(min-resolution: 192dpi),
-// 							(min-resolution: 2dppx) {
-// 								& {
-// 									background-image: url(../images/background/bg-image-adaptive@2x.png);
-// 								}
-// 							}
-// 						}
+  // 						@media screen and (min-width:768px) {
+  // 							& {
+  // 								background-image: url(../images/background/bg-image-adaptive.png);
+  // 							}
+
+  // 							@media (min-device-pixel-ratio: 2),
+  // 							(min-resolution: 192dpi),
+  // 							(min-resolution: 2dppx) {
+  // 								& {
+  // 									background-image: url(../images/background/bg-image-adaptive@2x.png);
+  // 								}
+  // 							}
+  // 						}
 }
 
 .section-hero {
-	@media screen and (min-width:768px) {
-		display: flex;
-	}
-		@extend %container
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @extend %container;
 }
-
 
 .hero {
-				@media screen and (min-width:1680px) {
-					margin-right: auto;
-				}
+  @media screen and (min-width: 1680px) {
+    margin-right: auto;
+  }
 }
 
-
 .hero__thumb {
+  width: 208px;
+  height: 178px;
 
-	width:208px;
-	height:178px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
 
-	@media screen and (max-width:767px) {
-			margin-left: auto;
-				margin-right: auto;
-				margin-top: 40px;
-		}
+  @media screen and (min-width: 768px) {
+    min-width: 375px;
+    min-height: 321px;
+  }
 
-	@media screen and (min-width:768px) {
-			min-width:375px;
-			min-height:321px ;
-		}
-
-	@media screen and (min-width:1680px) {
-		min-width: 841px;
-		min-height: 718px;
-	}
+  @media screen and (min-width: 1680px) {
+    min-width: 841px;
+    min-height: 718px;
+  }
 }
 
 .hero__title {
-	max-width: 280px;
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	background-image: linear-gradient(to right,var(--title-color) 17%,var(--second-title-color) 100%);
-	@media screen and (min-width:768px) {
-			max-width: 332px;
-		}
-	@media screen and (min-width:1680px) {
-		
-			max-width: 560px;
+  max-width: 280px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    var(--title-color) 17%,
+    var(--second-title-color) 100%
+  );
+  @media screen and (min-width: 768px) {
+    max-width: 332px;
+  }
+  @media screen and (min-width: 1680px) {
+    max-width: 560px;
 
-			@include font(null, 58px, null, null)
-		}
-		@extend %font-title
-
+    @include font(null, 58px, null, null);
+  }
+  @extend %font-title;
 }
 
 .hero__text-1 {
-margin-top: 8px;
+  margin-top: 8px;
 
-	
+  color: var(--fourth-color);
 
-	color: var(--fourth-color);
+  @media screen and (min-width: 1680px) {
+    @include font(null, 20px, null, null);
+  }
 
-	@media screen and (min-width:1680px) {
-			
-			@include font(null, 20px, null, null)
-		}
-
-		@include  font(500, 14px, 1.6, 0.08em)
+  @include font(500, 14px, 1.6, 0.08em);
 }
 
 .hero__text-2 {
-	color: var(--main-color);
+  color: var(--main-color);
 
-	@media screen and (min-width:1680px) {
-			@include font(null, 20px, null, null)
-		}
-       @include font(700, 14px, 1.6, 0.08em)
+  @media screen and (min-width: 1680px) {
+    @include font(null, 20px, null, null);
+  }
+  @include font(700, 14px, 1.6, 0.08em);
 }
 
 .hero__text-3 {
-	
-	color: var(--accent-color);
+  color: var(--accent-color);
 
-	@media screen and (min-width:768px) {
-			margin-bottom: 48px;
-		}
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 
-				@media screen and (min-width:1680px) {
-					margin-bottom: 0;
-					margin-left: 3px;
+  @media screen and (min-width: 1680px) {
+    margin-bottom: 0;
+    margin-left: 3px;
 
-					color: var(--main-color);
+    color: var(--main-color);
 
-					@include font(null, 20px, null, null)
-				}
+    @include font(null, 20px, null, null);
+  }
 
-				@include font(700, 14px, 1.6, 0.08em)
+  @include font(700, 14px, 1.6, 0.08em);
 }
 
-
-
 .hero__link-button {
-	text-align: center;
-	display: inline-block;
-	width: 280px;
-	max-height: 48px;
-	padding: 14px 0px;
+  text-align: center;
+  display: inline-block;
+  width: 280px;
+  max-height: 48px;
+  padding: 14px 0px;
 
-	@media screen and (min-width:768px) {
-	width: 260px;
-	}
-		@media screen and (min-width:1680px) {
-			width: 354px;
-			max-height: 70px;
-				height: 70px;
-				padding: 27px 0px;
+  @media screen and (min-width: 768px) {
+    width: 260px;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 354px;
+    max-height: 70px;
+    height: 70px;
+    padding: 27px 0px;
 
-				@include font (700, 14px, 1.2, 0.14em)
-		}
+    @include font(700, 14px, 1.2, 0.14em);
+  }
 
-	
-	background-color: var(--accent-color);
-	color: var(--second-color);
-	text-transform: uppercase;
-	
-	border: 2px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--second-color);
+  text-transform: uppercase;
 
-	transition: background-color var(--cubic), color var(--cubic);
-	
-	&:hover, &:focus {
-		background-color: transparent;
-		color: var(--accent-color);
-	}
-	
-	@include font (700,12px,1.2,0.08em)
+  border: 2px solid var(--accent-color);
+
+  transition: background-color var(--cubic), color var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: var(--accent-color);
+  }
+
+  @include font(700, 12px, 1.2, 0.08em);
 }
 
 .hero__list {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 
-	@media screen and (min-width:768px) {
-		margin-bottom: 48px;
-	}
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 
-		@media screen and (min-width:768px) {
-			display: flex;
-			flex-wrap: wrap;
-			max-width: 492px;
-
-		}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 492px;
+  }
 }
