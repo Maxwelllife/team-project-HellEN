@@ -1,4 +1,5 @@
 .benefits {
+    
     padding-top: 40px;
     background-image: linear-gradient(
     to bottom,
@@ -15,10 +16,11 @@
         padding-top: 237px;
         background-image: linear-gradient(
             to bottom,
-            var(--main-color) 436px,
+            var(--fifth-color) 436px,
             var(--second-bg-color) 436px);
     }
     &__container {
+        position: relative;
         @extend %container;
     }
     &__title {
@@ -47,9 +49,7 @@
         }   
     }
     &__list {
-        box-shadow: var(--shadow);
-        position: relative;
-        z-index: 1;
+
         background-color: var(--second-bg-color);
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         padding: 20px 24px 20px 20px;
@@ -61,6 +61,8 @@
             padding: 40px 112px 40px 92px;
         }
         @media screen and (min-width:1680px) {
+            z-index: 1;
+            box-shadow: var(--shadow);
             padding: 60px 32px 60px 140px;
         }
     }

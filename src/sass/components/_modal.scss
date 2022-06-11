@@ -66,7 +66,7 @@ transform: translate(-50%, -50%) scale(0.8);
 	top: 5px;
 	border: 0;
 	background-color: transparent;
-	color: var(--main-color);
+	color: var(--fifth-color);
 
 	transition: color var(--cubic);
 	
@@ -201,6 +201,7 @@ body.modal-open {
 
 
 .order-modal__title {
+	color: var(--fifth-color);
 	margin-bottom: 10px;
 	text-align: center;
 	text-transform: uppercase;
@@ -209,6 +210,7 @@ body.modal-open {
 }
 
 .form__label {
+	color: var(--fifth-color);
 	@media screen and (min-width:768px) {
 			font-size: 18px;
 		}
