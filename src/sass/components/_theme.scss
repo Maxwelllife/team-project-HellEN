@@ -1,4 +1,5 @@
 .switcher {
+    color: var(--accent-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -18,10 +19,10 @@
       height: 34px;
     }
   
-    &:hover {
-      color: var(--second-color);
-      background-color: var(--main-color);
-    }
+  //   &:hover {
+  //     color: var(--second-color);
+  //     background-color: var(--main-color);
+  //   }
   }
   
   .toggle-off {
@@ -51,7 +52,7 @@
   
   // -----------------------------------------------------------------------
   .toggle-wrapper {
-    right: -7px;
+    right: -6.5px;
     top: 60px;
     position: absolute;
     display: flex;

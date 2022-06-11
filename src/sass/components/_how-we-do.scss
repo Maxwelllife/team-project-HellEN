@@ -15,15 +15,20 @@
 }
 
 .how-head {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     text-align: center;
+    box-shadow: var(--shadow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,var(--title-color) 17%,var(--second-title-color) 100%);
+
 
     @media screen and (min-width:768px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
         
     @media screen and (min-width:1680px) {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
         text-align: left;
     }
 

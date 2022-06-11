@@ -24,6 +24,9 @@
     margin-bottom: 24px;
     @extend %font-title;
     text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,var(--title-color) 45%,var(--second-title-color) 55%,var(--title-color) 100%);
     @media screen and (min-width:768px) {
         margin-bottom: 40px;
     }

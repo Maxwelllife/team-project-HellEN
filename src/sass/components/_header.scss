@@ -97,6 +97,7 @@
 }
 
 .burger {
+	color: var(--main-color);
 	padding-top: 31px;
 	border: 0;
 	background-color: transparent;
@@ -138,7 +139,7 @@ stroke: currentColor;
 	max-width: 16px;
 	max-height: 16px;
 
-	color: var(--second-color);
+	color: #ffffff;
 
 	cursor: pointer;
 	transition: color var(--cubic);
@@ -222,7 +223,7 @@ body.menu-open {
 	
 		font-family: inherit;
 
-		color: var(--second-color);
+		color: #ffffff;
 		transition: color var(--cubic);
 
 		&:hover, &:focus {
@@ -263,7 +264,7 @@ body.menu-open {
 
 .logo__hell-drop-menu {
 	
-	color: var(--second-color);
+	color: #ffffff;
 
 	@media screen and (min-width:768px) {
 			@include font(null, 26px, null, null)
@@ -278,7 +279,7 @@ body.menu-open {
 }
 
 .logo__en-drop-menu {
-	color: var(--second-color);
+	color: var(#ffffff);
 
 	@media screen and (min-width:768px) {
 			@include font(null, 26px, null, null)
@@ -304,7 +305,7 @@ body.menu-open {
 
 .logo_english-drop-menu {
 	text-transform: uppercase;
-	color: var(--second-color);
+	color: #ffffff;
 
 	@media screen and (min-width:768px) {
 			@include font(null, 8px, null, null)

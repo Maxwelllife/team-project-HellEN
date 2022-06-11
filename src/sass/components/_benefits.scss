@@ -24,6 +24,7 @@
     &__title {
         @extend %font-title;
         color: var(--second-color);
+        
         padding-bottom: 32px;
         @media screen and (max-width:767px) {
             max-width:180px;
@@ -46,6 +47,7 @@
         }   
     }
     &__list {
+        box-shadow: var(--shadow);
         position: relative;
         z-index: 1;
         background-color: var(--second-bg-color);
