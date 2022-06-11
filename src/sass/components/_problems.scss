@@ -16,20 +16,6 @@
 .problems__container {
   @extend %container;
   position: relative;
-
-  // z-index: 0;
-  // @media screen and (min-width: 1680px) {
-  //   &::before {
-  //     position: absolute;
-  //     right: -35px;
-  //     bottom: 157px;
-  //     content: '';
-  //     background: url(../images/big_fire.svg) no-repeat;
-
-  //     width: 455px;
-  //     height: 472px;
-  //   }
-  // }
 }
 @media screen and (max-width: 1679px) {
   .problems__icon {
@@ -74,14 +60,6 @@
   }
 }
 
-@keyframes shadow {
-  0% {
-    box-shadow: none;
-  }
-  100% {
-    box-shadow: 155px 0px 128px -130px var(--accent-color);
-  }
-}
 .problems__title-accent {
   color: var(--accent-color);
 }
@@ -96,6 +74,14 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   @media screen and (min-width: 1680px) {
     animation: shadow 2000ms linear infinite alternate;
+    @keyframes shadow {
+      0% {
+        box-shadow: none;
+      }
+      100% {
+        box-shadow: 155px 0px 128px -130px var(--accent-color);
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {

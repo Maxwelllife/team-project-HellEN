@@ -279,7 +279,7 @@ body.menu-open {
 }
 
 .logo__en-drop-menu {
-	color: var(#ffffff);
+	color: #ffffff;
 
 	@media screen and (min-width:768px) {
 			@include font(null, 26px, null, null)
