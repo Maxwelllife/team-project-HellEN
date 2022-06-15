@@ -117,9 +117,18 @@ logo__footer {
   height: 40px;
   opacity: 0.6;
   position: fixed;
-  bottom: 100px;
-  right: 80px;
+  bottom: 70px;
+  right: 20px;
   display: none;
   text-indent: -9999px;
+  z-index: 6;
   background: url('../images/footer/circle-up.svg') no-repeat;
+  @media screen and (min-width: 768px) {
+    bottom: 70px;
+    right: 30px;
+  }
+  @media screen and (min-width: 1680px) {
+    bottom: 70px;
+    right: 50px;
+  }
 }
