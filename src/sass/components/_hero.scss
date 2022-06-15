@@ -113,12 +113,7 @@
 .hero__text-3 {
   color: var(--accent-color);
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 48px;
-  }
-
   @media screen and (min-width: 1680px) {
-    margin-bottom: 0;
     margin-left: 3px;
 
     color: var(--main-color);
